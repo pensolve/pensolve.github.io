@@ -1,0 +1,6 @@
+{
+  "name": "pensolve-mvp-landing-page",
+  "root": ".",
+  "clean_urls": true,
+  "error_page": "error.html"
+}
