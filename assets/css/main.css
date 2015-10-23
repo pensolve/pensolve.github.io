@@ -2729,7 +2729,8 @@
 		/* Banner */
 
 			#banner {
-				background-size: 15em, 15em, auto, cover;
+				background-size: auto;
+				background-repeat: repeat;
 			}
 
 		/* Main */
@@ -2741,8 +2742,8 @@
 		/* CTA */
 
 			#cta {
-				background-size: 15em, 15em, auto, cover;
-				padding: 3em;
+				background-size: auto;
+				background-repeat: repeat;
 			}
 
 	}
@@ -3171,7 +3172,8 @@
 		/* Banner */
 
 			#banner {
-				background-size: 10em, 10em, auto, cover;
+				background-size: auto;
+				background-repeat: repeat;
 				padding: 6em 0;
 			}
 
@@ -3211,7 +3213,8 @@
 		/* CTA */
 
 			#cta {
-				background-size: 10em, 10em, auto, cover;
+				background-size: auto;
+				background-repeat: repeat;
 				padding: 3em 1.5em;
 			}
 
