@@ -2522,6 +2522,8 @@
 		display: block;
 		margin: 0 auto;
 		padding-bottom: 3em;
+		max-width: 100%
+		height: auto;
 	}
 
 
@@ -2729,7 +2731,6 @@
 		/* Banner */
 
 			#banner {
-				background-size: auto;
 				background-repeat: repeat;
 			}
 
@@ -2742,7 +2743,6 @@
 		/* CTA */
 
 			#cta {
-				background-size: auto;
 				background-repeat: repeat;
 			}
 
@@ -3172,7 +3172,6 @@
 		/* Banner */
 
 			#banner {
-				background-size: auto;
 				background-repeat: repeat;
 				padding: 6em 0;
 			}
@@ -3213,7 +3212,6 @@
 		/* CTA */
 
 			#cta {
-				background-size: auto;
 				background-repeat: repeat;
 				padding: 3em 1.5em;
 			}
