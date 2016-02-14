@@ -1783,7 +1783,6 @@
 	}
 
 		.image:before {
-			background: url("images/overlay.png");
 			content: '';
 			height: 100%;
 			left: 0;
@@ -1811,6 +1810,18 @@
 				width: 100%;
 			}
 
+		.image.circle {
+			display: block;
+			margin: 0 0 2em 0;
+		}
+
+			.image.circle img {
+				display: block;
+				width: 320px;
+				height: 320px;
+				border-radius: 50%;
+				margin: auto;
+			}
 /* Icon */
 
 	.icon {
