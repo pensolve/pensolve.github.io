@@ -112,7 +112,7 @@ mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script><!-- end Mixpanel -->
 				function onPlayProgress(data) {
 					if (!isPlaying) {
 						console.log('play event fired! - ' + data);
-						if (data.percent > 1) {
+						if (data.percent < 1) {
 							mixpanel.track('Video playing from beginning', {
 								percent: data.percent
 							});
