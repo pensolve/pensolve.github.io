@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Contact - Twenty by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <script src="calculate-roi.js"></script>
+	</head>
+	<body class="contact">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<!-- <a class="navbar-brand" href="#"> -->
+						<img style="max-width: 12em; margin-bottom: -14px; margin-top: -7px;"
+             src="/images/horizontal-pensolve.png">
+
+					<!-- </a> -->
+          <a href="https://app.pensolve.com" class="descriptor">Engineering spreadsheet review software</a>
+
+					<nav id="nav">
+						<ul>
+							<!--<li><a href="contact.html">Contact</a></li>-->
+							<li><a href="#" onclick="clickedTrialPensolveAtBeginning()" class="button special">Free Trial</a></li>
+						</ul>
+					</nav>
+				</header>
+
+
+			<!-- Main -->
+				<article id="main">
+
+					<header id="roi" class="special container">
+						<span class="icon fa-table"></span>
+
+
+						<section class="wrapper style2 container special">
+              <h2>Calculate the savings for your firm</h2>
+              <br>
+							<div class="row">
+								<div class="4u 12u(narrower)">
+
+									<form id="roi-calculator" action="" onsubmit="return false;">
+
+            Hours spent using spreadsheets per week:<br>
+            <input id="hours" type="text" value="4.5"><br>
+                    Number of engineers:<br>
+            <input id="num-engs" type="text" value="15"><br>
+                    Hourly cost of an engineer:<br>
+            <input id="rate" type="text" value="$80"><br>
+
+                    <br>
+            <input type="submit" onclick="calculateROI()" value="Submit">
+          </form>
+                  </div>
+                <div class="8u 12u(narrower)">
+
+                  <h3> Calculation summary</h3>
+
+                  <div id="roi-answers"></div>
+                  <p id="spreadsheet-hours"></p>
+                  <p id="annual-cost"></p>
+                  <p id="review-ratio"></p>
+                  <p id="review-saving"></p>
+                  <p id="hours-savings"></p>
+                  <p id="annual-savings"></p>
+                  </div>
+                </div>
+              <br>
+
+              </section>
+              </header>
+
+				</article>
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/company/pensolve" class="icon circle fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://www.twitter.com/pensolve" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/twitter" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
+					</ul>
+
+					<ul class="copyright">
+						<li>&copy; 2015 All Rights Reserved</li>
+						<li><a href="http://www.pensolve.com/blog/">Blog</a></li>
+            <li><a href="roi-calculations.html">ROI</a></li>
+						<li><a href="#" onclick="clickedPricing()">Pricing</a></li>
+						<li><a href="https://docs.google.com/document/d/1fXK7QoRWJerB9UKkFqDYeubYcmxXmMkDMoyh1ufNx7I/edit?usp=sharing">Terms of service</a></li>
+						<li><a href="https://docs.google.com/document/d/1i0LxowM9hNJgH04LMujNwL6r9V67TQZEQL7ZZtii83w/edit?usp=sharing">Privacy Policy</a></li>
+					</ul>
+
+					<ul class="contact">
+						<li>Contact details</li>
+						<li>GreenHouse</li>
+						<li>146A Lichfield Street</li>
+						<li>Christchurch 8011</li>
+						<li>New Zealand</li>
+						<li>+64 27 346 5818</li>
+					</ul>
+
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

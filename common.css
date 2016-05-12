@@ -8,3 +8,10 @@ a.descriptor {
 			border-color: #26c17f;
 
 	}
+
+.banter {
+		background-image: url("/images/banner-lg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
