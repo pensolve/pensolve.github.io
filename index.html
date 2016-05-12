@@ -8,6 +8,7 @@
 	<head>
 		<title>Pensolve</title>
 		<meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="common.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -20,6 +21,7 @@
 		<script src="assets/js/jquery.scrollgress.min.js"></script>
 		<script src="assets/js/skel.min.js"></script>
 		<script src="assets/js/util.js"></script>
+    <script src="calculate-roi.js"></script>
 		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 		<script src="assets/js/main.js"></script>
 		<!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
@@ -157,11 +159,14 @@ mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script><!-- end Mixpanel -->
 					<!-- <a class="navbar-brand" href="#"> -->
 						<img style="max-width: 12em; margin-bottom: -14px; margin-top: -7px;"
              src="/images/horizontal-pensolve.png">
+
 					<!-- </a> -->
+          <a href="https://app.pensolve.com" class="descriptor">Engineering spreadsheet review software</a>
+
 					<nav id="nav">
 						<ul>
 							<!--<li><a href="contact.html">Contact</a></li>-->
-							<li><a href="#" onclick="clickedTrialPensolveAtBeginning()" class="button special">Trial Pensolve</a></li>
+							<li><a href="#" onclick="clickedTrialPensolveAtBeginning()" class="button special">Free Trial</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -215,6 +220,38 @@ mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script><!-- end Mixpanel -->
 									</footer>
 
 						</section>
+
+          <header id="roi" class="special container">
+						<span class="icon fa-table"></span>
+						<h2>Spreadsheet usage costs</h2>
+					</header>
+
+
+
+					<!-- Two -->
+						<section class="wrapper style1 container special">
+							<div class="row">
+								<div class="4u 12u(narrower)">
+
+									<form id="roi-calculator" action="" onsubmit="return false;">
+            Number of engineers:<br>
+            <input id="num-engs" type="text" value="15"><br>
+            Hours spent with spreadsheet per week:<br>
+            <input id="hours" type="text" value="4.5"><br>
+
+                    <br>
+            <input type="submit" onclick="calculateROI()" value="Submit">
+          </form>
+                  </div>
+                <div class="8u 12u(narrower)">
+
+									<p>Post the answers here</p>
+                  <div id="roi-answers"></div>
+                  </div>
+                </div>
+
+              </section>
+
 
 					<header id="what" class="special container">
 						<span class="icon fa-table"></span>
