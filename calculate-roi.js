@@ -33,8 +33,8 @@ function calculateROI() {
   document.getElementById('annual-cost').innerHTML = "Annual spending on spreadsheet engineering: " + cost_str;
   document.getElementById('review-ratio').innerHTML = "Time modifying and reviewing spreadsheets: 50%";
   document.getElementById('review-saving').innerHTML = "Approximate time saving from Pensolve: 30%";
-  document.getElementById('hours-savings').innerHTML = "Expected hours saved: " + hours_saved_str + " hours";
-  document.getElementById('annual-savings').innerHTML = "Expected Pensolve annual savings: <u>" + savings_str + "</u>";
+  document.getElementById('hours-savings').innerHTML = "Estimated hours saved: " + hours_saved_str + " hours";
+  document.getElementById('annual-savings').innerHTML = "Estimated Pensolve annual savings: <u>" + savings_str + "</u>";
 
   console.log("annual cost: ", annual_cost);
   console.log("pensolve savings: ", pensolve_savings);
