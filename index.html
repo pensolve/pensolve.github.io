@@ -52,6 +52,9 @@ mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script><!-- end Mixpanel -->
 			function clickedHow() {
 				mixpanel.track("Clicked how button");
 			}
+      function findOutMore() {
+				mixpanel.track("Clicked find out more button");
+			}
       function goToCalculator() {
         mixpanel.track("Clicked go to calculator");
       }
@@ -168,9 +171,10 @@ mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script><!-- end Mixpanel -->
 			<!-- Header -->
 				<header id="header" class="alt">
 					<!-- <a class="navbar-brand" href="#"> -->
+          <a href="#">
 						<img style="max-width: 12em; margin-bottom: -14px; margin-top: -7px;"
              src="/images/horizontal-pensolve.png">
-
+          </a>
 					<!-- </a> -->
           <a href="https://app.pensolve.com" class="descriptor">Engineering spreadsheet review software</a>
 
@@ -233,7 +237,7 @@ mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script><!-- end Mixpanel -->
               <footer>
 										<ul class="buttons">
 											<!--<li><a href="#what" onclick="clickedHow()" class="button scrolly">How can Pensolve help?</a></li>-->
-                       <li><a href="roi-calculations.html">Find out more</a></li>
+                       <li><a href="more-info.html" onclick="findOutMore()" class="button">Find out more</a></li>
 										</ul>
 									</footer>
 
@@ -352,16 +356,24 @@ mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script><!-- end Mixpanel -->
 					</ul>
 
 					<ul class="copyright">
-						<li>&copy; 2015 All Rights Reserved</li>
-						<li><a href="http://www.pensolve.com/blog/">Blog</a></li>
-            <li><a href="roi-calculations.html">Find out more</a></li>
-						<li><a href="#" onclick="clickedPricing()">Pricing</a></li>
+            <li>&copy; Copyright 2015-
+<script language="JavaScript" type="text/javascript">
+    now = new Date;
+    theYear=now.getYear();
+    if (theYear < 1900)
+    theYear=theYear+1900;
+    document.write(theYear)
+</script>
+ All Rights Reserved.</li>
+						<!--<li>&copy; 2015 All Rights Reserved</li>-->
+						<li><a href="https://twitter.com/pensolve">Blog</a></li>
+            <li><a href="more-info.html" onclick="findOutMore()">Find out more</a></li>
 						<li><a href="https://docs.google.com/document/d/1fXK7QoRWJerB9UKkFqDYeubYcmxXmMkDMoyh1ufNx7I/edit?usp=sharing">Terms of service</a></li>
 						<li><a href="https://docs.google.com/document/d/1i0LxowM9hNJgH04LMujNwL6r9V67TQZEQL7ZZtii83w/edit?usp=sharing">Privacy Policy</a></li>
 					</ul>
 
 					<ul class="contact">
-						<li>Contact details</li>
+						<li><strong>Contact details</strong></li>
 						<li>GreenHouse</li>
 						<li>146A Lichfield Street</li>
 						<li>Christchurch 8011</li>
