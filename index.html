@@ -44,6 +44,12 @@ mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script><!-- end Mixpanel -->
 				mixpanel.track("Transferred to Pensolve app", {
 					source: "Clicked Trial Pensolve button at beginning"
 				});
+//				window.open('https://app.pensolve.com/signup?ref=lp');
+			}
+      function clickedTrialPensolveBelowVideo() {
+				mixpanel.track("Transferred to Pensolve app", {
+					source: "Clicked Trial Pensolve button below video"
+				});
 				window.open('https://app.pensolve.com/signup?ref=lp');
 			}
 			function clickedWhy() {
@@ -181,7 +187,7 @@ mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script><!-- end Mixpanel -->
 					<nav id="nav">
 						<ul>
 							<!--<li><a href="contact.html">Contact</a></li>-->
-							<li><a href="#" onclick="clickedTrialPensolveAtBeginning()" class="button special">Free Trial</a></li>
+							<li><a href="https://app.pensolve.com" onclick="clickedTrialPensolveAtBeginning()" class="button special">Free Trial</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -238,6 +244,7 @@ mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script><!-- end Mixpanel -->
 										<ul class="buttons">
 											<!--<li><a href="#what" onclick="clickedHow()" class="button scrolly">How can Pensolve help?</a></li>-->
                        <li><a href="more-info.html" onclick="findOutMore()" class="button">Find out more</a></li>
+                      <li><a href="#" onclick="clickedTrialPensolveBelowVideo()" class="button special">Free Trial</a></li>
 										</ul>
 									</footer>
 

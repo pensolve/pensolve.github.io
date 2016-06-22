@@ -14,6 +14,23 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
     <script src="calculate-roi.js"></script>
+    <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script><!-- end Mixpanel -->
+    <script type="text/javascript">
+    mixpanel.register_once({"Source of traffic": source()});
+			mixpanel.track('Visit More Info Page');
+  function clickedTrialPensolveInWhy() {
+				mixpanel.track("Transferred to Pensolve app", {
+					source: "Clicked Trial in the why section"
+				});
+				window.open('https://app.pensolve.com/signup?ref=lp');
+			}
+  function clickedImReadyInWhy() {
+				mixpanel.track("Transferred to Pensolve app", {
+					source: "Clicked I'm Ready button in Why"
+				})}
+</script>
 	</head>
 	<body class="contact">
 		<div id="page-wrapper">
@@ -23,9 +40,9 @@
         <h3 align="center">Simple</h3>
         <p>Designed to keep things simple. Simple layouts, simple outputs, simple functionality.</p>
 				<h3 align="center">Thoughtful</h3>
-        <p>We want engineers to think about the design and explain their decisions</p>
+        <p>We want engineers to think about the design and explain their decisions.</p>
         <h3>Efficient</h3>
-        <p>Let us decipher the cell references and provide a professional presentation of your calculations</p>
+        <p>Let us decipher the cell references and provide a professional presentation of your calculations.</p>
 						</header>
 					<!-- Two -->
 						<section class="wrapper style1 container special">
@@ -68,7 +85,7 @@
                     <ul style="list-style-type:circle">
                       <li align="left">Calculation pad is the most transparent way to view engineering calculations</li>
                       <li align="left">By converting to a different format, engineers can avoid a self-serving bias and complete self-review of their calculations</li>
-                      <li align="left">The PDF calculations pad is searchable and has click-able links to allow quick navigation to important parts</li>
+                      <li align="left">The PDF calculations pad is searchable and has clickable links to allow quick navigation to important parts</li>
                     </ul>
                     <p>The professional hand-written output means everyone understands the design decisions</p>
                     <h3>Pensolve hand-written calculations view</h3>
@@ -81,6 +98,10 @@
 
 
 							</div>
+              <ul class="buttons">
+											<!--<li><a href="#what" onclick="clickedHow()" class="button scrolly">How can Pensolve help?</a></li>-->
+                      <li><a href="#" onclick="clickedTrialPensolveInWhy()" class="button special">Trial Now</a></li>
+										</ul>
 						</section>
 
 
@@ -97,7 +118,7 @@
 					<nav id="nav">
 						<ul>
 							<!--<li><a href="contact.html">Contact</a></li>-->
-							<li><a href="#" onclick="clickedTrialPensolveAtBeginning()" class="button special">Free Trial</a></li>
+							<li><a href="#" onclick="clickedTrialPensolveInWhy()" class="button special">Free Trial</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -111,7 +132,7 @@
 
 
 						<section class="wrapper style2 container special">
-              <h2>Calculate the savings for your firm</h2>
+              <h2>Calculate approximate savings for your firm</h2>
               <br>
 							<div class="row">
 								<div class="4u 12u(narrower)">
@@ -153,7 +174,7 @@
 							</header>
 							<footer>
 								<ul class="buttons">
-									<li><a href="https://app.pensolve.com/signup?ref=lp" onclick="clickedImReady()" class="button special">Yes, I'm ready</a></li>
+									<li><a href="https://app.pensolve.com/signup?ref=lp" onclick="clickedImReadyInWhy()" class="button special">Yes, I'm ready</a></li>
 									<li><a href="mailto:team@pensolve.com" class="button">Contact us</a></li>
 								</ul>
 							</footer>
