@@ -69,6 +69,9 @@ mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script><!-- end Mixpanel -->
 			function clickedWhy() {
 				mixpanel.track("Clicked why button");
 			}
+      function goingToEducationSite() {
+        mixpanel.track("Going to Education site");
+      }
 			function clickedHow() {
 				mixpanel.track("Clicked how button");
 			}
@@ -419,7 +422,7 @@ mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script><!-- end Mixpanel -->
  All Rights Reserved.</li>
 						<!--<li>&copy; 2015 All Rights Reserved</li>-->
 						<li><a href="http://pensolve.com/blog">Blog</a></li>
-						<li><a href="education.html">Education</a></li>
+						<li><a href="education.html" onclick="goingToEducationSite()">Education</a></li>
             <!--<li><a href="https://twitter.com/pensolve">Blog</a></li>-->
             <li><a href="more-info.html" onclick="findOutMore()">Find out more</a></li>
 						<li><a href="https://docs.google.com/document/d/1fXK7QoRWJerB9UKkFqDYeubYcmxXmMkDMoyh1ufNx7I/edit?usp=sharing">Terms of service</a></li>
