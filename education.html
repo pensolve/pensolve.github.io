@@ -6,360 +6,408 @@
 -->
 <html>
 <head>
-<title>Pensolve for Education</title>
-<meta charset="utf-8" />
-  <link rel=”image_src” href=”http://pensolve.com/images/fast-spreadsheet-review.jpg” />
+  <title>Pensolve for Education</title>
+  <meta charset="utf-8"/>
+  <link rel=”image_src” href=”http://pensolve.com/images/fast-spreadsheet-review.jpg”/>
   <meta property="og:image" content="http://pensolve.com/images/fast-spreadsheet-review.jpg"/>
-  <meta property="og:image:secure_url" content="http://pensolve.com/images/fast-spreadsheet-review.jpg" />
-  <meta name="keywords" content="Engineering spreadsheets, Engineering student, Design spreadsheet, Review, Structural engineering" />
-  <meta name="description" content="The fastest way to prepare engineering calculation assignments. Convert spreadsheets into a professional PDF output of handwritten calculations that makes life easy for you and your tutors.">
+  <meta property="og:image:secure_url" content="http://pensolve.com/images/fast-spreadsheet-review.jpg"/>
+  <meta name="keywords"
+        content="Engineering spreadsheets, Engineering student, Design spreadsheet, Review, Structural engineering"/>
+  <meta name="description"
+        content="The fastest way to prepare engineering calculation assignments. Convert spreadsheets into a professional PDF output of handwritten calculations that makes life easy for you and your tutors.">
 
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-<link rel="stylesheet" type="text/css" href="common.css">
-<link rel="stylesheet" href="assets/css/main.css" />
-<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-<script src="calculate-roi.js"></script>
-<!--  <!-- start Mixpanel -->
-<script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
-for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
-mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script>
-end Mixpanel -->
-<script type="text/javascript">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <!--[if lte IE 8]>
+  <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+  <link rel="stylesheet" type="text/css" href="common.css">
+  <link rel="stylesheet" href="assets/css/main.css"/>
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
+  <!--[if lte IE 9]>
+  <link rel="stylesheet" href="assets/css/ie9.css"/><![endif]-->
+  <script src="calculate-roi.js"></script>
+  <!--  <!-- start Mixpanel -->
+  <script type="text/javascript">(function (e, b) {
+    if (!b.__SV) {
+      var a, f, i, g;
+      window.mixpanel = b;
+      b._i = [];
+      b.init = function (a, e, d) {
+        function f(b, h) {
+          var a = h.split(".");
+          2 == a.length && (b = b[a[0]], h = a[1]);
+          b[h] = function () {
+            b.push([h].concat(Array.prototype.slice.call(arguments, 0)))
+          }
+        }
+
+        var c = b;
+        "undefined" !== typeof d ? c = b[d] = [] : d = "mixpanel";
+        c.people = c.people || [];
+        c.toString = function (b) {
+          var a = "mixpanel";
+          "mixpanel" !== d && (a += "." + d);
+          b || (a += " (stub)");
+          return a
+        };
+        c.people.toString = function () {
+          return c.toString(1) + ".people (stub)"
+        };
+        i = "disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+        for (g = 0; g < i.length; g++)f(c, i[g]);
+        b._i.push([a, e, d])
+      };
+      b.__SV = 1.2;
+      a = e.createElement("script");
+      a.type = "text/javascript";
+      a.async = !0;
+      a.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === e.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";
+      f = e.getElementsByTagName("script")[0];
+      f.parentNode.insertBefore(a, f)
+    }
+  })(document, window.mixpanel || []);
+  mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script>
+  end Mixpanel -->
+  <script type="text/javascript">
     mixpanel.register_once({"Source of traffic": source()});
-			mixpanel.track('Visit More Info Page');
-  function clickedTrialPensolveInWhyEd() {
-				mixpanel.track("Transferred to Pensolve app in Ed", {
-					source: "Clicked Trial in the Ed why section"
-				});
-				window.open('https://app.pensolve.com/signup?ref=lp');
-			}
-  function clickedHowItWorksEd() {
-	  mixpanel.track("Clicked how it works on Ed page", {
-			source: "Clicked how it works on Ed page"
-		});
-	}
-  }
-  function clickedImReadyInWhy() {
-				mixpanel.track("Transferred to Pensolve app", {
-					source: "Clicked I'm Ready button in Why"
-				})}
-  function clickedTrialPensolveBelowEdVideo() {
-		mixpanel.track("Transferred to Pensolve app Ed", {
-			source: "Clicked Trial Pensolve button below Ed video"
-		});
-		window.open('https://app.pensolve.com/signup?ref=lp_ed');
-	}
-  $(function() {
-		console.log("loading vimeo event stuff");
-		var player = $('iframe');
-		var playerOrigin = '*';
-		// Listen for messages from the player
-		if (window.addEventListener) {
-			window.addEventListener('message', onMessageReceived, false);
-		}
-		else {
-			window.attachEvent('onmessage', onMessageReceived, false);
-		}
-		// Helper function for sending a message to the player
-function post(action, value) {
-  var data = {
-    method: action
-  };
+    mixpanel.track('Visit Education page');
+    function clickedTrialPensolveInWhyEd() {
+      mixpanel.track("Ed: Transferred to Pensolve app", {
+        source: "Clicked Trial in the Ed why section"
+      });
+      window.open('https://app.pensolve.com/signup?ref=lp');
+    }
+    function clickedHowItWorksEd() {
+      mixpanel.track("Ed: Clicked how it works on page", {
+        source: "Clicked how it works on Ed page"
+      });
+    }
+    function clickedImReadyInWhy() {
+      mixpanel.track("Ed: Transferred to Pensolve app", {
+        source: "Ed: Clicked I'm Ready button in Why"
+      })
+    }
+    function clickedTrialPensolveBelowEdVideo() {
+      mixpanel.track("Ed: Transferred to Pensolve app", {
+        source: "Ed: Clicked Trial Pensolve button below Ed video"
+      });
+      window.open('https://app.pensolve.com/signup?ref=lp_ed');
+    }
+    $(function () {
+      console.log("loading vimeo event stuff");
+      var player = $('iframe');
+      var playerOrigin = '*';
+      // Listen for messages from the player
+      if (window.addEventListener) {
+        window.addEventListener('message', onMessageReceived, false);
+      }
+      else {
+        window.attachEvent('onmessage', onMessageReceived, false);
+      }
+      // Helper function for sending a message to the player
+      function post(action, value) {
+        var data = {
+          method: action
+        };
 
-  if (value) {
-      data.value = value;
-  }
+        if (value) {
+          data.value = value;
+        }
 
-  var message = JSON.stringify(data);
-  player[0].contentWindow.postMessage(message, playerOrigin);
-}
-		// Handle messages received from the player
-		function onMessageReceived (event) {
-			// Handle messages from the vimeo player only
-			if (!(/^https?:\/\/player.vimeo.com/).test(event.origin)) {
-				return false;
-			}
+        var message = JSON.stringify(data);
+        player[0].contentWindow.postMessage(message, playerOrigin);
+      }
 
-			if (playerOrigin === '*') {
-				playerOrigin = event.origin;
-			}
+      // Handle messages received from the player
+      function onMessageReceived(event) {
+        // Handle messages from the vimeo player only
+        if (!(/^https?:\/\/player.vimeo.com/).test(event.origin)) {
+          return false;
+        }
 
-			var data = JSON.parse(event.data);
-			switch (data.event) {
-				case 'ready':
-					onReady();
-					break;
-				case 'playProgress':
-    onPlayProgress(data.data);
-    break;
+        if (playerOrigin === '*') {
+          playerOrigin = event.origin;
+        }
 
-				case 'pause':
-					onPause();
-					break;
+        var data = JSON.parse(event.data);
+        switch (data.event) {
+          case 'ready':
+            onReady();
+            break;
+          case 'playProgress':
+            onPlayProgress(data.data);
+            break;
 
-				case 'finish':
-					onFinish();
-					break;
-			}
-		}
-function onReady() {
-			console.log('ready event fired!');
+          case 'pause':
+            onPause();
+            break;
 
-post('addEventListener', 'pause');
-post('addEventListener', 'finish');
-post('addEventListener', 'playProgress');
-}
+          case 'finish':
+            onFinish();
+            break;
+        }
+      }
 
-		var isPlaying = false;
-		function onPlayProgress(data) {
-			if (!isPlaying) {
-				console.log('play event fired! - ' + data);
-				if (data.percent < 1) {
-					mixpanel.track('Video playing from beginning', {
-						percent: data.percent
-					});
-				} else {
-					mixpanel.track('Video continued playing', {
-						percent: data.percent
-					});
+      function onReady() {
+        console.log('ready event fired!');
 
-				}
-				isPlaying = true;
-			}
-		}
+        post('addEventListener', 'pause');
+        post('addEventListener', 'finish');
+        post('addEventListener', 'playProgress');
+      }
 
-function onPause() {
-			console.log('pause event fired!');
-			mixpanel.track('Video paused');
-			isPlaying = false;
-}
+      var isPlaying = false;
 
-function onFinish() {
-			console.log('finish event fired!');
-			mixpanel.track('Video finished');
-			isPlaying = false;
-}
-	});
-</script>
+      function onPlayProgress(data) {
+        if (!isPlaying) {
+          console.log('play event fired! - ' + data);
+          if (data.percent < 1) {
+            mixpanel.track('Video playing from beginning', {
+              percent: data.percent
+            });
+          } else {
+            mixpanel.track('Video continued playing', {
+              percent: data.percent
+            });
+
+          }
+          isPlaying = true;
+        }
+      }
+
+      function onPause() {
+        console.log('pause event fired!');
+        mixpanel.track('Video paused');
+        isPlaying = false;
+      }
+
+      function onFinish() {
+        console.log('finish event fired!');
+        mixpanel.track('Video finished');
+        isPlaying = false;
+      }
+    });
+  </script>
 </head>
 <body class="contact">
-	<div id="page-wrapper">
-		<section id="banner">
-			<div id="bgimg">
-				<!--<image src="../../images/horizontal-pensolve.png" ></image>-->
-				<!--
-						".inner" is set up as an inline-block so it automatically expands
-						in both directions to fit whatever's inside it. This means it won't
-						automatically wrap lines, so be sure to use line breaks where
-						appropriate (<br />).
-					-->
-				<div class="inner">
+<div id="page-wrapper">
+  <section id="banner">
+    <div id="bgimg">
+      <!--<image src="../../images/horizontal-pensolve.png" ></image>-->
+      <!--
+          ".inner" is set up as an inline-block so it automatically expands
+          in both directions to fit whatever's inside it. This means it won't
+          automatically wrap lines, so be sure to use line breaks where
+          appropriate (<br />).
+        -->
+      <div class="inner">
 
-					<header>
-						<h2>PENSOLVE</h2>
-					</header>
-					<p>Engineering spreadsheet review software</p>
-					<p class="student">FOR STUDENTS</p>
-					<br />
-					<footer>
-						<ul class="buttons vertical">
-							<li><a href="#toVideo" onclick="clickedHowItWorksEd()"
-								class="button fit scrolly">How it works</a></li>
-						</ul>
-					</footer>
+        <header>
+          <h2>PENSOLVE</h2>
+        </header>
+        <p>Engineering spreadsheet review software</p>
 
-				</div>
-			</div>
+        <p class="student">FOR STUDENTS</p>
+        <br/>
+        <footer>
+          <ul class="buttons vertical">
+            <li><a href="#toVideo" onclick="clickedHowItWorksEd()"
+                   class="button fit scrolly">How it works</a></li>
+          </ul>
+        </footer>
+
+      </div>
+    </div>
 
 
-		</section>
-		<article id="toVideo">
-		<section class="wrapper center style container special-alt">
-			<header>
-				<h2>
-					Every student understands the <strong>pain</strong> of writing out
-					calculations by hand
-				</h2>
-			</header>
-			<iframe src="https://player.vimeo.com/video/169777337" width="800"
-				height="450" frameborder="0" webkitallowfullscreen
-				mozallowfullscreen allowfullscreen></iframe>
-			<br /> <br>
-			<footer>
-				<ul class="buttons">
-					<!--<li><a href="#what" onclick="clickedHow()" class="button scrolly">How can Pensolve help?</a></li>-->
-					<li><a href="#" onclick="clickedTrialPensolveBelowEdVideo()"
-						class="button special">Sign up now</a></li>
-				</ul>
-			</footer>
+  </section>
+  <article id="toVideo">
+    <section class="wrapper center style container special-alt">
+      <header>
+        <h2>
+          Every student understands the <strong>pain</strong> of writing out
+          calculations by hand
+        </h2>
+      </header>
+      <iframe src="https://player.vimeo.com/video/169777337" width="80%" max-width="800"
+              height="400vw" frameborder="0" webkitallowfullscreen
+              mozallowfullscreen allowfullscreen></iframe>
+      <br/> <br>
+      <footer>
+        <ul class="buttons">
+          <!--<li><a href="#what" onclick="clickedHow()" class="button scrolly">How can Pensolve help?</a></li>-->
+          <li><a href="#" onclick="clickedTrialPensolveBelowEdVideo()"
+                 class="button special">Sign up now</a></li>
+        </ul>
+      </footer>
 
-		</section>
-		</article>
-		
-		<header id="what" class="special container">
-			<span class="icon fa-table"></span>
-			<h2>Why use pensolve? - benefits to students</h2>
-		</header>
-		<section class="wrapper style1 container special">
-			<div class="row">
-				<div class="4u 12u(narrower)">
+    </section>
+  </article>
 
-					<section>
-						<span class="icon featured fa-check"></span>
-						<header>
-							<h3>Save time</h3>
-						</header>
-						<p>Pensolve reproduces your spreadsheet calculations as if
-							they were written out by hand</p>
-					</section>
+  <header id="what" class="special container">
+    <span class="icon fa-table"></span>
 
-				</div>
-				<div class="4u 12u(narrower)">
+    <h2>Why use pensolve? - benefits to students</h2>
+  </header>
+  <section class="wrapper style1 container special">
+    <div class="row">
+      <div class="4u 12u(narrower)">
 
-					<section>
-						<span class="icon featured fa-check"></span>
-						<header>
-							<h3>Professional output</h3>
-						</header>
-						<p>Pensolve converts spreadsheets into a professional PDF
-							format which is easy to mark</p>
-					</section>
+        <section>
+          <span class="icon featured fa-check"></span>
+          <header>
+            <h3>Save time</h3>
+          </header>
+          <p>Pensolve reproduces your spreadsheet calculations as if
+            they were written out by hand</p>
+        </section>
 
-				</div>
-				<div class="4u 12u(narrower)">
+      </div>
+      <div class="4u 12u(narrower)">
 
-					<section>
-						<span class="icon featured fa-check"></span>
-						<header>
-							<h3>Industry worth</h3>
-						</header>
-						<p>Pensolve files can build up and become part of a portfolio
-							of your work, perfect to send to future employers</p>
-					</section>
+        <section>
+          <span class="icon featured fa-check"></span>
+          <header>
+            <h3>Professional output</h3>
+          </header>
+          <p>Pensolve converts spreadsheets into a professional PDF
+            format which is easy to mark</p>
+        </section>
 
-				</div>
-			</div>
-		</section>
-		<section id="team" class="wrapper style3 container special">
+      </div>
+      <div class="4u 12u(narrower)">
 
-			<header class="major">
-				<h2>
-					The team behind <strong>Pensolve</strong>
-				</h2>
-			</header>
+        <section>
+          <span class="icon featured fa-check"></span>
+          <header>
+            <h3>Industry worth</h3>
+          </header>
+          <p>Pensolve files can build up and become part of a portfolio
+            of your work, perfect to send to future employers</p>
+        </section>
 
-			<div class="row">
-				<div class="6u 12u(narrower)">
+      </div>
+    </div>
+  </section>
+  <section id="team" class="wrapper style3 container special">
 
-					<section>
-						<a href="#" class="image circle"><img src="images/maxim.png"
-							alt="" /></a>
-						<header>
-							<h3>Maxim Millen</h3>
-							<h4>CEO</h4>
-							<h5>BE (Hons), PhD candidate</h5>
-						</header>
-						<p>Maxim provides the vision, direction and face of Pensolve.
-							Having recently finished a PhD in earthquake engineering at
-							University of Canterbury, he is well respected in the
-							international engineering community as a leader in structural and
-							geotechnical engineering and the communication of his ideas to
-							the wider community. While working with his structural
-							engineering colleagues, he recognised the problem of
-							understanding spreadsheet calculations and desired a better way.</p>
-					</section>
+    <header class="major">
+      <h2>
+        The team behind <strong>Pensolve</strong>
+      </h2>
+    </header>
 
-				</div>
+    <div class="row">
+      <div class="6u 12u(narrower)">
 
-				<div class="6u 12u(narrower)">
+        <section>
+          <a href="#" class="image circle"><img src="images/maxim.png"
+                                                alt=""/></a>
+          <header>
+            <h3>Maxim Millen</h3>
+            <h4>CEO</h4>
+            <h5>BE (Hons), PhD candidate</h5>
+          </header>
+          <p>Maxim provides the vision, direction and face of Pensolve.
+            Having recently finished a PhD in earthquake engineering at
+            University of Canterbury, he is well respected in the
+            international engineering community as a leader in structural and
+            geotechnical engineering and the communication of his ideas to
+            the wider community. While working with his structural
+            engineering colleagues, he recognised the problem of
+            understanding spreadsheet calculations and desired a better way.</p>
+        </section>
 
-					<section>
-						<a href="#" class="image circle"><img src="images/charlie.png"
-							alt="" /></a>
-						<header>
-							<h3>Charlie Smith</h3>
-							<h4>CTO</h4>
-							<h5>BE (Hons)</h5>
-						</header>
-						<p>Charlie leads the development of Pensolve platform. He is
-							responsible for product development and day-to-day customer
-							services. Before Pensolve, he worked for over three years in
-							development roles for the mission-critical communications
-							industry. During this time, he cultivated his full-stack
-							knowledge, working on projects ranging from network protocol
-							implementations on embedded devices to client-facing web
-							services.</p>
-					</section>
+      </div>
 
-				</div>
-			</div>
+      <div class="6u 12u(narrower)">
 
-			<!-- Header -->
-			<header id="header" class="alt">
-				<!-- <a class="navbar-brand" href="#"> -->
-				<a href="/"> <img
-					style="max-width: 12em; margin-bottom: -14px; margin-top: -7px;"
-					src="/images/horizontal-pensolve.png"></a>
+        <section>
+          <a href="#" class="image circle"><img src="images/charlie.png"
+                                                alt=""/></a>
+          <header>
+            <h3>Charlie Smith</h3>
+            <h4>CTO</h4>
+            <h5>BE (Hons)</h5>
+          </header>
+          <p>Charlie leads the development of Pensolve platform. He is
+            responsible for product development and day-to-day customer
+            services. Before Pensolve, he worked for over three years in
+            development roles for the mission-critical communications
+            industry. During this time, he cultivated his full-stack
+            knowledge, working on projects ranging from network protocol
+            implementations on embedded devices to client-facing web
+            services.</p>
+        </section>
 
-				<!-- </a> -->
-				<a href="https://app.pensolve.com" class="descriptor">Engineering
-					spreadsheet review software</a>
-				<nav id="nav">
-					<ul>
-						<!--<li><a href="contact.html">Contact</a></li>-->
-						<li><a href="#" onclick="clickedTrialPensolveInWhyEd()"
-							class="button special">Free Trial</a></li>
-					</ul>
-				</nav>
-			</header>
+      </div>
+    </div>
 
-			<!-- Footer -->
-			<footer id="footer">
+    <!-- Header -->
+    <header id="header" class="alt">
+      <!-- <a class="navbar-brand" href="#"> -->
+      <a href="/"> <img
+        style="max-width: 12em; margin-bottom: -14px; margin-top: -7px;"
+        src="/images/horizontal-pensolve.png"></a>
 
-				<ul class="icons">
-					<li><a href="https://www.linkedin.com/company/pensolve"
-						class="icon circle fa-linkedin"><span class="label">LinkedIn</span></a></li>
-					<li><a href="https://www.twitter.com/pensolve"
-						class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="https://www.facebook.com/twitter"
-						class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
-				</ul>
+      <!-- </a> -->
+      <a href="https://app.pensolve.com" class="descriptor">Engineering
+        spreadsheet review software</a>
+      <nav id="nav">
+        <ul>
+          <!--<li><a href="contact.html">Contact</a></li>-->
+          <li><a href="#" onclick="clickedTrialPensolveInWhyEd()"
+                 class="button special">Free Trial</a></li>
+        </ul>
+      </nav>
+    </header>
 
-				<ul class="copyright">
-					<li>&copy; 2015 - 2016 All Rights Reserved</li>
-					<li><a href="http://www.pensolve.com/blog/">Blog</a></li>
-					<li><a href="more-info.html">Find out more</a></li>
-					<li><a
-						href="https://docs.google.com/document/d/1fXK7QoRWJerB9UKkFqDYeubYcmxXmMkDMoyh1ufNx7I/edit?usp=sharing">Terms
-							of service</a></li>
-					<li><a
-						href="https://docs.google.com/document/d/1i0LxowM9hNJgH04LMujNwL6r9V67TQZEQL7ZZtii83w/edit?usp=sharing">Privacy
-							Policy</a></li>
-				</ul>
+    <!-- Footer -->
+    <footer id="footer">
 
-				<ul class="contact">
-					<li><strong>Contact details</strong></li>
-					<li>GreenHouse</li>
-					<li>146A Lichfield Street</li>
-					<li>Christchurch 8011</li>
-					<li>New Zealand</li>
-					<li>+64 27 346 5818</li>
-				</ul>
+      <ul class="icons">
+        <li><a href="https://www.linkedin.com/company/pensolve"
+               class="icon circle fa-linkedin"><span class="label">LinkedIn</span></a></li>
+        <li><a href="https://www.twitter.com/pensolve"
+               class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="https://www.facebook.com/twitter"
+               class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
+      </ul>
 
-			</footer>
-	</div>
+      <ul class="copyright">
+        <li>&copy; 2015 - 2016 All Rights Reserved</li>
+        <li><a href="http://www.pensolve.com/blog/">Blog</a></li>
+        <li><a href="more-info.html">Find out more</a></li>
+        <li><a
+          href="https://docs.google.com/document/d/1fXK7QoRWJerB9UKkFqDYeubYcmxXmMkDMoyh1ufNx7I/edit?usp=sharing">Terms
+          of service</a></li>
+        <li><a
+          href="https://docs.google.com/document/d/1i0LxowM9hNJgH04LMujNwL6r9V67TQZEQL7ZZtii83w/edit?usp=sharing">Privacy
+          Policy</a></li>
+      </ul>
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.dropotron.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/jquery.scrollgress.min.js"></script>
-	<script src="assets/js/skel.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-	<script src="assets/js/main.js"></script>
+      <ul class="contact">
+        <li><strong>Contact details</strong></li>
+        <li>GreenHouse</li>
+        <li>146A Lichfield Street</li>
+        <li>Christchurch 8011</li>
+        <li>New Zealand</li>
+        <li>+64 27 346 5818</li>
+      </ul>
+
+    </footer>
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrollgress.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<!--[if lte IE 8]>
+<script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="assets/js/main.js"></script>
 
 </body>
 </html>
