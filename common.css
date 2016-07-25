@@ -15,3 +15,10 @@ a.descriptor {
     background-position: center center;
     background-attachment: fixed;
 }
+
+.student {
+		font-style: italic;
+		font-weight: bold;
+		color: aquamarine;
+}
+
