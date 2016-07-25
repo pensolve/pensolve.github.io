@@ -29,6 +29,12 @@ end Mixpanel -->
 				});
 				window.open('https://app.pensolve.com/signup?ref=lp');
 			}
+  function clickedHowItWorksEd() {
+	  mixpanel.track("Clicked how it works on Ed page", {
+			source: "Clicked how it works on Ed page"
+		});
+	}
+  }
   function clickedImReadyInWhy() {
 				mixpanel.track("Transferred to Pensolve app", {
 					source: "Clicked I'm Ready button in Why"
@@ -153,7 +159,7 @@ function onFinish() {
 					<br />
 					<footer>
 						<ul class="buttons vertical">
-							<li><a href="#why" onclick="clickedWhy()"
+							<li><a href="#toVideo" onclick="clickedHowItWorksEd()"
 								class="button fit scrolly">How it works</a></li>
 						</ul>
 					</footer>
@@ -161,7 +167,9 @@ function onFinish() {
 				</div>
 			</div>
 
+
 		</section>
+		<article id="toVideo">
 		<section class="wrapper center style container special-alt">
 			<header>
 				<h2>
@@ -184,6 +192,8 @@ function onFinish() {
 			</footer>
 
 		</section>
+		</article>
+		
 		<header id="what" class="special container">
 			<span class="icon fa-table"></span>
 			<h2>Why use pensolve? - benefits to students</h2>
