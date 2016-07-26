@@ -12,7 +12,7 @@
 		<title>Pensolve</title>
     <meta name="keywords" content="Engineering spreadsheets, Design spreadsheet, Review, Structural engineering" />
 		<meta charset="utf-8" />
-    <meta name="description" content="Efficient review of engineering spreadsheets. Pensolve is a spreadsheet review platform for engineers. Pensolve allows engineers to quickly find calculation errors and understand the design decisions in the spreadsheet.">
+    <meta name="description" content="Efficient review of engineering spreadsheets. Pensolve allows engineers to quickly find calculation errors and understand the design decisions in the spreadsheet.">
 
 <!-- Short description of your sites subject -->
 <meta name="subject" content="Engineering spreadsheet review software">
@@ -41,9 +41,7 @@ setTimeout(ldinsp, 500); document.readyState != "complete" ? (window.attachEvent
 </script>
 <!-- End Inspectlet Embed Code -->
 		<script src="assets/js/main.js"></script>
-		<!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
-for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
-mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script><!-- end Mixpanel -->
+
 		<script type="text/javascript">
 			function getURLParameter(name) {
 				// http://stackoverflow.com/questions/11582512/how-to-get-url-parameters-with-javascript/11582513
@@ -53,7 +51,7 @@ mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script><!-- end Mixpanel -->
 				return getURLParameter('ref') || "None set";
 			}
 			mixpanel.register_once({"Source of traffic": source()});
-			mixpanel.track('Visit landing page');
+			mixpanel.track('Visit team page');
 			function clickedTrialPensolveAtBeginning() {
 				mixpanel.track("Transferred to Pensolve app", {
 					source: "Clicked Trial Pensolve button at beginning"
@@ -183,11 +181,6 @@ mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script><!-- end Mixpanel -->
 			});
 		</script>
 	</head>
-  <style type="text/css">
-.bgimg {
-    background-image: url('images/maxim.png');
-}
-</style>
 	<body class="index">
 		<div id="page-wrapper">
 
@@ -227,7 +220,7 @@ mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script><!-- end Mixpanel -->
 					<div class="inner">
 
 						<header>
-							<h2>PENSOLVE</h2>
+							<h1>PENSOLVE</h1>
 						</header>
 						<p>Engineering spreadsheet review software 
 						<br />
@@ -346,7 +339,7 @@ mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script><!-- end Mixpanel -->
 						<div class="inner">
 							<header>
 								<h2>Ready to give it a go?</h2>
-								<p>14-day free trial</p>
+								<p>30-day free trial</p>
 							</header>
 							<footer>
 								<ul class="buttons">
@@ -357,46 +350,6 @@ mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script><!-- end Mixpanel -->
 						</div>
 
 					</section>
-
-
-
-					<!-- Three -->
-						<section id="team" class="wrapper style3 container special">
-
-							<header class="major">
-								<h2>The team behind <strong>Pensolve</strong></h2>
-							</header>
-
-							<div class="row">
-								<div class="6u 12u(narrower)">
-
-									<section>
-										<a href="#" class="image circle"><img src="images/maxim.png" alt="" /></a>
-										<header>
-											<h3>Maxim Millen</h3>
-											<h4>CEO</h4>
-											<h5>BE (Hons), PhD candidate</h5>
-										</header>
-										<p>Maxim provides the vision, direction and face of Pensolve. Having recently finished a PhD in earthquake engineering at University of Canterbury, he is well respected in the international engineering community as a leader in structural and geotechnical engineering and the communication of his ideas to the wider community. While working with his structural engineering colleagues, he recognised the problem of understanding spreadsheet calculations and desired a better way.</p>
-									</section>
-
-								</div>
-
-								<div class="6u 12u(narrower)">
-
-									<section>
-										<a href="#" class="image circle"><img src="images/charlie.png" alt="" /></a>
-										<header>
-											<h3>Charlie Smith</h3>
-											<h4>CTO</h4>
-											<h5>BE (Hons)</h5>
-										</header>
-										<p>Charlie leads the development of Pensolve platform. He is responsible for product development and day-to-day customer services. Before Pensolve, he worked for over three years in development roles for the mission-critical communications industry. During this time, he cultivated his full-stack knowledge, working on projects ranging from network protocol implementations on embedded devices to client-facing web services.</p>
-									</section>
-
-								</div>
-                </div>
-						</section>
 
 				</article>
 
