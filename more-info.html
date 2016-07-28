@@ -22,7 +22,7 @@ mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script><!-- end Mixpanel -->
     mixpanel.register_once({"Source of traffic": source()});
 			mixpanel.track('Visit More Info Page');
   function clickedTrialPensolveInWhy() {
-				mixpanel.track("Transferred to Pensolve app", {
+				mixpanel.track("Transferred to Pensolve app from Why", {
 					source: "Clicked Trial in the why section"
 				});
 				window.open('https://app.pensolve.com/signup?ref=lp');
@@ -31,6 +31,12 @@ mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script><!-- end Mixpanel -->
 				mixpanel.track("Transferred to Pensolve app", {
 					source: "Clicked I'm Ready button in Why"
 				})}
+  function clickedSubmitROICalculator() {
+				mixpanel.track("Clicked calculate ROI", {
+					source: "Clicked ROI"
+				})
+    calculateROI()
+  }
 </script>
 	</head>
 	<body class="contact">
@@ -148,7 +154,7 @@ mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script><!-- end Mixpanel -->
             <input id="rate" type="text" value="$80"><br>
 
                     <br>
-            <input type="submit" onclick="calculateROI()" value="Submit">
+            <input type="submit" onclick="clickedSubmitROICalculator()" value="Submit">
           </form>
                   </div>
                 <div class="8u 12u(narrower)">
