@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+  <title>Beam design example</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="Steel beam design spreadsheet example. A simple example of how Pensolve makes review far easier than checking a spreadsheet cell-by-cell.">
+
+  <!--[if lte IE 8]>
+  <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+  <link rel="stylesheet" type="text/css" href="common.css">
+  <link rel="stylesheet" href="assets/css/main.css"/>
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
+  <!--[if lte IE 9]>
+  <link rel="stylesheet" href="assets/css/ie9.css"/><![endif]-->
+  <script src="calculate-roi.js"></script>
+  <!-- start Mixpanel -->
+  <script type="text/javascript">(function (e, b) {
+    if (!b.__SV) {
+      var a, f, i, g;
+      window.mixpanel = b;
+      b._i = [];
+      b.init = function (a, e, d) {
+        function f(b, h) {
+          var a = h.split(".");
+          2 == a.length && (b = b[a[0]], h = a[1]);
+          b[h] = function () {
+            b.push([h].concat(Array.prototype.slice.call(arguments, 0)))
+          }
+        }
+
+        var c = b;
+        "undefined" !== typeof d ? c = b[d] = [] : d = "mixpanel";
+        c.people = c.people || [];
+        c.toString = function (b) {
+          var a = "mixpanel";
+          "mixpanel" !== d && (a += "." + d);
+          b || (a += " (stub)");
+          return a
+        };
+        c.people.toString = function () {
+          return c.toString(1) + ".people (stub)"
+        };
+        i = "disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+        for (g = 0; g < i.length; g++)f(c, i[g]);
+        b._i.push([a, e, d])
+      };
+      b.__SV = 1.2;
+      a = e.createElement("script");
+      a.type = "text/javascript";
+      a.async = !0;
+      a.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === e.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";
+      f = e.getElementsByTagName("script")[0];
+      f.parentNode.insertBefore(a, f)
+    }
+  })(document, window.mixpanel || []);
+  mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script>
+  <!-- end Mixpanel -->
+  <script type="text/javascript">
+    mixpanel.register_once({"Source of traffic": source()});
+    mixpanel.track('Visit Steel design page');
+    function clickedImReadyInExampleWhy() {
+      mixpanel.track("Transferred to Pensolve app", {
+        source: "Clicked I'm Ready button in Why"
+      })
+    }
+    function clickedExampleSpreadsheet() {
+      mixpanel.track("Clicked to see example spreadsheet", {
+        source: "Clicked to see example spreadsheet"
+      })
+    }
+  </script>
+
+</head>
+<body>
+<header class="alt">
+  <a href="#">
+    <img style="max-width: 12em; margin-bottom: 10px; margin-top: 30px;"
+         src="/images/horizontal-pensolve.png">
+  </a>
+  <!-- </a> -->
+  <a href="https://app.pensolve.com" class="descriptor">Engineering spreadsheet review software</a>
+
+</header>
+<div class="steel-example" padding=15px>
+  <h2>Beam design spreadsheet</h2>
+
+  <p align="center">The PDF below is generated from a spreadsheet for the design of a steel I-section beam.</p>
+
+  <div class="row">
+    <div class="2u 12u(narrower)">
+      <p class="pdf-note">Check out the clickable links in the contents page.</p>
+
+      <p class="pdf-note">References to design documents are formatted in the right-hand column.</p>
+    </div>
+    <div class="8u 12u(narrower)">
+
+      <object type="application/pdf" style="border: black solid 3px;" width="100%" max-width="800"
+              height="800vw"
+              data="public/example-files/Steel_Beam_Flexural_Capacity.pdf">
+      </object>
+    </div>
+    <div class="2u 12u(narrower)">
+      <p class="pdf-note">Cell references to <a href="public/example-files/Steel%20Beam%20Flexural%20Capacity.xlsx" onclick="clickedExampleSpreadsheet()">the spreadsheet </a> are shown in light grey.</p>
+
+      <p class="pdf-note">Both the algebraic and number formulas are shown to aid review.</p>
+    </div>
+  </div>
+</div>
+
+</section>
+
+
+<!-- Header -->
+<header id="header" class="alt">
+  <!-- <a class="navbar-brand" href="#"> -->
+  <a href="/">
+    <img style="max-width: 12em; margin-bottom: -14px; margin-top: -7px;"
+         src="/images/horizontal-pensolve.png"></a>
+
+  <!-- </a> -->
+  <a href="https://app.pensolve.com" class="descriptor">Engineering spreadsheet review software</a>
+
+  <nav id="nav">
+    <ul>
+      <!--<li><a href="contact.html">Contact</a></li>-->
+      <li><a href="#" onclick="clickedTrialPensolveInWhy()" class="button special">Free Trial</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<!-- Main -->
+<article id="main">
+
+  <header id="roi" class="special container">
+    <span class="icon fa-table"></span>
+
+    <section id="cta">
+      <div class="inner">
+        <header>
+          <h2>Ready to give it a go?</h2>
+
+          <p>30-day free trial</p>
+        </header>
+        <footer>
+          <ul class="buttons">
+            <li><a href="https://app.pensolve.com/signup?ref=lp" onclick="clickedImReadyInExampleWhy()"
+                   class="button special">Yes, I'm ready</a></li>
+            <li><a href="mailto:team@pensolve.com" class="button">Contact us</a></li>
+          </ul>
+        </footer>
+      </div>
+
+    </section>
+  </header>
+
+</article>
+
+<!-- Footer -->
+<footer id="footer">
+
+  <ul class="icons">
+    <li><a href="https://www.linkedin.com/company/pensolve" class="icon circle fa-linkedin"><span
+      class="label">LinkedIn</span></a>
+    </li>
+    <li><a href="https://www.twitter.com/pensolve" class="icon circle fa-twitter"><span
+      class="label">Twitter</span></a></li>
+    <li><a href="https://www.facebook.com/twitter" class="icon circle fa-facebook"><span
+      class="label">Facebook</span></a>
+    </li>
+  </ul>
+
+  <ul class="copyright">
+    <li>&copy; 2015 All Rights Reserved</li>
+    <li><a href="http://www.pensolve.com/blog/">Blog</a></li>
+    <li><a href="more-info.html">Find out more</a></li>
+    <li><a href="https://docs.google.com/document/d/1fXK7QoRWJerB9UKkFqDYeubYcmxXmMkDMoyh1ufNx7I/edit?usp=sharing">Terms
+      of service</a></li>
+    <li><a href="https://docs.google.com/document/d/1i0LxowM9hNJgH04LMujNwL6r9V67TQZEQL7ZZtii83w/edit?usp=sharing">Privacy
+      Policy</a></li>
+  </ul>
+
+  <ul class="contact">
+    <li>Contact details</li>
+    <li>GreenHouse</li>
+    <li>146A Lichfield Street</li>
+    <li>Christchurch 8011</li>
+    <li>New Zealand</li>
+    <li>+64 27 346 5818</li>
+  </ul>
+
+</footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrollgress.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<!--[if lte IE 8]>
+<script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

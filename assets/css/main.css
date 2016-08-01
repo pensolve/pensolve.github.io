@@ -3272,3 +3272,20 @@
   text-align: center;
   font-style: italic;
 }
+
+.steel-example {
+  text-align: center;
+}
+
+.pdf-note {
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 6px;
+  background-color: rgba(92,184,92,0.2);
+  border-color: rgba(0,184,92,0.8);
+  -moz-border-radius: 6px;
+  font-style: italic;
+ border-radius: 6px; /* standards-compliant: (IE) */
+}
