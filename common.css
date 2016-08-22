@@ -21,4 +21,31 @@ a.descriptor {
 		font-weight: bold;
 		color: aquamarine;
 }
+/* .videocontents{
+	border: 1px dashed black;
+	text-align:center;
+	background-color: #2eac68;
+} */
+.contentstitle{
+	font-size: 30px;
+	font-weight: bold;
+	
+}
+.contentssubtitle{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#contentslist{
+	color: yellow;
+}
+
+.videoroute{
+	text-decoration: none;
+	color: white;
+}
+.returncontents{
+	text-decoration: none;
+	color: black;
+}
 
