@@ -50,3 +50,14 @@ a.descriptor {
 	color: black;
 }
 
+.vidgrid{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.vidpagevids{
+	padding: 10px;
+}
+
+

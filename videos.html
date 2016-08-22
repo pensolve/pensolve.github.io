@@ -36,11 +36,16 @@
 <script async src="assets/js/util.js"></script>
 <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 <script src="assets/js/main.js"></script>
+
+
 <!-- start Mixpanel -->
-<script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+
+<!-- <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
 for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
-mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script>
+mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script> -->
+
 <!-- end Mixpanel -->
+
 <script type="text/javascript">
 			function getURLParameter(name) {
 				// http://stackoverflow.com/questions/11582512/how-to-get-url-parameters-with-javascript/11582513
@@ -189,7 +194,7 @@ mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script>
 		<!-- Header -->
 		<header id="header" class="alt">
 			<!-- <a class="navbar-brand" href="#"> -->
-			<a href="#"> <img
+			<a href="index.html"> <img
 				style="max-width: 12em; margin-bottom: -14px; margin-top: -7px;"
 				src="/images/horizontal-pensolve.png">
 			</a>
@@ -211,8 +216,8 @@ mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script>
 		<!--<header class="main-header" role="banner">-->
 		<!--<img src="/images/horizontal-pensolve.png" alt="Banner Image"/>-->
 		<!--</header>-->
-		
-		
+
+
 		<section id="banner">
 			<div id="bgimg">
 				<!--<image src="../../images/horizontal-pensolve.png" ></image>-->
@@ -253,154 +258,41 @@ mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script>
 		<section id="cta">
 			<article id="contents">
 				<div class="inner">
-					<h1 class="contentstitle">Contents</h1>
-					<h2 class="contentssubtitle">Pensolve videos</h2>
-					<ol>
-						<li><a class="videoroute" href="#video1">Engineering
-								spreadsheet review software</a></li>
-						<li><a class="videoroute" href="#video2">Getting started</a></li>
-						<li><a class="videoroute" href="#video3">How to review
-								spreadsheet calculations</a></li>
-						<li><a class="videoroute" href="#video4">Table
-								calculations tutorial</a></li>
-						<li><a class="videoroute" href="#video5">Comparison view
-								teaser</a></li>
-						<li><a class="videoroute" href="#video6">Pensolve for
-								Education</a></li>
-						<li></li>
-					</ol>
-					<!-- 	<h2 class="contentssubtitle">Spreadsheets: How to</h2>
-					<ol class="contentslist">
-						<li><a class="videoroute" href="#video7">Input a square
-								root</a></li>
-						<li><a class="videoroute" href="#video8">Input &#960</a></li>
-						<li><a class="videoroute" href="#video9">Input greek
-								symbols</a></li>
-						<li><a class="videoroute" href="#video10">Input a square
-								root</a></li>
-						<li><a class="videoroute" href="#video11">Input &#960</a></li>
-						<li><a class="videoroute" href="#video12">Input greek
-								symbols</a></li>
-					</ol> -->
+				
+				<header>
+				<h2>Pensolve Videos</h2>
+				</header>
+
+					<div class="vidgrid">
+						<iframe class="vidpagevids" src="https://player.vimeo.com/video/161422082" 
+							max-width="400" height="200vw" frameborder="0"
+							webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+						<iframe class="vidpagevids" src="https://player.vimeo.com/video/166175754" 
+							max-width="400" height="200vw" frameborder="0"
+							webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+						<iframe class="vidpagevids" src="https://player.vimeo.com/video/147259465" 
+							max-width="400" height="200vw" frameborder="0"
+							webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+						<iframe class="vidpagevids" src="https://player.vimeo.com/video/166904917" 
+							max-width="400" height="200vw" frameborder="0"
+							webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+						<iframe class="vidpagevids" src="https://player.vimeo.com/video/168590627" 
+							max-width="400" height="200vw" frameborder="0"
+							webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+						<iframe class="vidpagevids" src="https://player.vimeo.com/video/169777337" 
+							max-width="400" height="200vw" frameborder="0"
+							webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</div>
+						
 				</div>
 			</article>
 		</section>
 
-		<article id="video1">
-			<section class="wrapper center style container special-alt">
-				<header>
-					<h2>Pensolve - Engineering spreadsheet review software</h2>
-				</header>
-				<iframe src="https://player.vimeo.com/video/161422082" width="80%"
-					max-width="800" height="400vw" frameborder="0"
-					webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-				<p class="returncontents">
-					<a href="#contents">Return to contents</a>
-				</p>
-			</section>
-		</article>
-
-		<section>
-			<header id="what" class="special container">
-				<span class="icon fa-table"></span>
-			</header>
-		</section>
-
-		<article id="video2">
-			<section class="wrapper center style container special-alt">
-				<header>
-					<h2>Pensolve - Getting Started</h2>
-				</header>
-				<iframe src="https://player.vimeo.com/video/166175754" width="80%"
-					max-width="800" height="400vw" frameborder="0"
-					webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-				<p class="returncontents">
-					<a href="#contents">Return to contents</a>
-				</p>
-			</section>
-		</article>
-
-
-		<section>
-			<header id="what" class="special container">
-				<span class="icon fa-table"></span>
-			</header>
-		</section>
-
-
-		<article id="video3">
-			<section class="wrapper center style container special-alt">
-				<header>
-					<h2>How to review spreadsheet calculations</h2>
-				</header>
-				<iframe src="https://player.vimeo.com/video/147259465" width="80%"
-					max-width="800" height="400vw" frameborder="0"
-					webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-				<p class="returncontents">
-					<a href="#contents">Return to contents</a>
-				</p>
-			</section>
-		</article>
-
-		<section>
-			<header id="what" class="special container">
-				<span class="icon fa-table"></span>
-			</header>
-		</section>
-
-		<article id="video4">
-			<section class="wrapper center style container special-alt">
-				<header>
-					<h2>Table calculations tutorial</h2>
-				</header>
-				<iframe src="https://player.vimeo.com/video/166904917" width="80%"
-					max-width="800" height="400vw" frameborder="0"
-					webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-				<p class="returncontents">
-					<a href="#contents">Return to contents</a>
-				</p>
-			</section>
-		</article>
-
-		<section>
-			<header id="what" class="special container">
-				<span class="icon fa-table"></span>
-			</header>
-		</section>
-
-		<article id="video5">
-			<section class="wrapper center style container special-alt">
-				<header>
-					<h2>Comparison view teaser</h2>
-				</header>
-				<iframe src="https://player.vimeo.com/video/168590627" width="80%"
-					max-width="800" height="400vw" frameborder="0"
-					webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-				<p class="returncontents">
-					<a href="#contents">Return to contents</a>
-				</p>
-			</section>
-		</article>
-
-		<section>
-			<header id="what" class="special container">
-				<span class="icon fa-table"></span>
-			</header>
-		</section>
-
-		<article id="video6">
-			<section class="wrapper center style container special-alt">
-				<header>
-					<h2>Pensolve for Education</h2>
-				</header>
-				<iframe src="https://player.vimeo.com/video/169777337" width="80%"
-					max-width="800" height="400vw" frameborder="0"
-					webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-				<p class="returncontents">
-					<a href="#contents">Return to contents</a>
-				</p>
-			</section>
-		</article>
 
 
 
@@ -467,7 +359,7 @@ mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script>
 
 </script>
 	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<!-- <script src="assets/js/jquery.dropotron.min.js"></script> -->
 	<script src="assets/js/jquery.scrolly.min.js"></script>
 	<script src="assets/js/jquery.scrollgress.min.js"></script>
 	<script src="assets/js/skel.min.js"></script>
