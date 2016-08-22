@@ -27,18 +27,19 @@ a.descriptor {
 	background-color: #2eac68;
 } */
 .contentstitle{
-	font-size: 30px;
+	font-size: 2em;
 	font-weight: bold;
+	text-decoration: underline;
 	
 }
 .contentssubtitle{
-	font-size: 20px;
+	font-size: 1em;
 	font-weight: bold;
 }
 
-#contentslist{
+/* #contentslist{
 	color: yellow;
-}
+} */
 
 .videoroute{
 	text-decoration: none;
