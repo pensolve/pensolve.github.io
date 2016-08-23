@@ -55,37 +55,19 @@ mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script>
 				return getURLParameter('ref') || "None set";
 			}
 			mixpanel.register_once({"Source of traffic": source()});
-			mixpanel.track('Visit main landing page');
+			mixpanel.track('Visit videos page');
 			function clickedTrialPensolveAtBeginning() {
 				mixpanel.track("Transferred to Pensolve app", {
 					source: "Clicked Trial Pensolve button at beginning"
 				});
 //				window.open('https://app.pensolve.com/signup?ref=lp');
 			}
-      function clickedTrialPensolveBelowVideo() {
-				mixpanel.track("Transferred to Pensolve app", {
-					source: "Clicked Trial Pensolve button below video"
-				});
-				window.open('https://app.pensolve.com/signup?ref=lp');
-			}
-			function clickedWhy() {
-				mixpanel.track("Clicked why button");
-			}
       function goingToEducationSite() {
         mixpanel.track("Going to Education site");
       }
-      function goingToSteelExample() {
-        mixpanel.track("Going to Steel beam example");
-      }
-			function clickedHow() {
-				mixpanel.track("Clicked how button");
-			}
       function findOutMore() {
 				mixpanel.track("Clicked find out more button");
 			}
-      function goToCalculator() {
-        mixpanel.track("Clicked go to calculator");
-      }
 			function clickedPricing() {
 				mixpanel.track("Clicked Pricing link");
 				window.open('https://app.pensolve.com/upgrade?ref=lp');
@@ -272,9 +254,9 @@ mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script>
 							max-width="500" height="190vw" frameborder="0"
 							webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-						<iframe class="vidpagevids" src="https://player.vimeo.com/video/147259465" 
-							max-width="500" height="190vw" frameborder="0"
-							webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<!--<iframe class="vidpagevids" src="https://player.vimeo.com/video/147259465" -->
+							<!--max-width="500" height="190vw" frameborder="0"-->
+							<!--webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
 
 						<iframe class="vidpagevids" src="https://player.vimeo.com/video/166904917" 
 							max-width="500" height="190vw" frameborder="0"
