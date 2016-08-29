@@ -9,13 +9,6 @@ a.descriptor {
 
 	}
 
-.banter {
-		background-image: url("/images/banner-lg.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-}
-
 .student {
 		font-style: italic;
 		font-weight: bold;
@@ -58,6 +51,11 @@ a.descriptor {
 
 .vidpagevids{
 	padding: 10px;
+}
+
+.new-title{
+	font-size: 26pt;
+  text-decoration: underline;
 }
 
 
