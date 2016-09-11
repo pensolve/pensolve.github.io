@@ -1,5 +1,6 @@
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans");
 
 /*
 	Twenty by HTML5 UP
@@ -3290,4 +3291,9 @@
   -moz-border-radius: 6px;
   font-style: italic;
  border-radius: 6px; /* standards-compliant: (IE) */
+}
+
+.easy-read {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
 }
