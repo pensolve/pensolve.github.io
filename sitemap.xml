@@ -36,6 +36,16 @@
   <lastmod>2016-07-26T04:13:16+00:00</lastmod>
   <changefreq>weekly</changefreq>
 </url>
+    <url>
+  <loc>http://app.pensolve.com/example-files</loc>
+  <lastmod>2016-06-27T01:45:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+    <url>
+  <loc>http://app.pensolve.com/faqs</loc>
+  <lastmod>2016-06-27T01:45:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
 <url>
   <loc>http://pensolve.com/blog//2016/06/27/blog-Engineering_spreadsheets1/</loc>
   <lastmod>2016-06-27T01:45:31+00:00</lastmod>
@@ -143,11 +153,6 @@
 </url>
 <url>
   <loc>http://pensolve.com/blog/page10/</loc>
-  <lastmod>2016-06-27T01:45:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://pensolve.com/blog//2015/09/29/rebirth/</loc>
   <lastmod>2016-06-27T01:45:31+00:00</lastmod>
   <changefreq>weekly</changefreq>
 </url>
