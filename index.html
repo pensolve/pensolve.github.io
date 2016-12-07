@@ -36,19 +36,69 @@
   <!--[if lte IE 8]>
   <script src="assets/js/ie/respond.min.js"></script><![endif]-->
   <!-- Begin Inspectlet Embed Code -->
- <script type="text/javascript" id="inspectletjs">
- window.__insp = window.__insp || [];
- __insp.push(['wid', 397416662]);
- (function() {
- function ldinsp(){if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
- setTimeout(ldinsp, 500); document.readyState != "complete" ? (window.attachEvent ? window.attachEvent('onload', ldinsp) : window.addEventListener('load', ldinsp, false)) : ldinsp();
- })();
- </script>
- <!-- End Inspectlet Embed Code -->
+  <script type="text/javascript" id="inspectletjs">
+    window.__insp = window.__insp || [];
+    __insp.push(['wid', 397416662]);
+    (function () {
+      function ldinsp() {
+        if (typeof window.__inspld != "undefined") return;
+        window.__inspld = 1;
+        var insp = document.createElement('script');
+        insp.type = 'text/javascript';
+        insp.async = true;
+        insp.id = "inspsync";
+        insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js';
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(insp, x);
+      };
+      setTimeout(ldinsp, 500);
+      document.readyState != "complete" ? (window.attachEvent ? window.attachEvent('onload', ldinsp) : window.addEventListener('load', ldinsp, false)) : ldinsp();
+    })();
+  </script>
+  <!-- End Inspectlet Embed Code -->
   <script async src="assets/js/main.js"></script>
-  <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
-  for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
-  mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script><!-- end Mixpanel -->
+  <!-- start Mixpanel -->
+  <script type="text/javascript">(function (e, b) {
+    if (!b.__SV) {
+      var a, f, i, g;
+      window.mixpanel = b;
+      b._i = [];
+      b.init = function (a, e, d) {
+        function f(b, h) {
+          var a = h.split(".");
+          2 == a.length && (b = b[a[0]], h = a[1]);
+          b[h] = function () {
+            b.push([h].concat(Array.prototype.slice.call(arguments, 0)))
+          }
+        }
+
+        var c = b;
+        "undefined" !== typeof d ? c = b[d] = [] : d = "mixpanel";
+        c.people = c.people || [];
+        c.toString = function (b) {
+          var a = "mixpanel";
+          "mixpanel" !== d && (a += "." + d);
+          b || (a += " (stub)");
+          return a
+        };
+        c.people.toString = function () {
+          return c.toString(1) + ".people (stub)"
+        };
+        i = "disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+        for (g = 0; g < i.length; g++)f(c, i[g]);
+        b._i.push([a, e, d])
+      };
+      b.__SV = 1.2;
+      a = e.createElement("script");
+      a.type = "text/javascript";
+      a.async = !0;
+      a.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === e.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";
+      f = e.getElementsByTagName("script")[0];
+      f.parentNode.insertBefore(a, f)
+    }
+  })(document, window.mixpanel || []);
+  mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script>
+  <!-- end Mixpanel -->
   <script type="text/javascript">
     function getURLParameter(name) {
       // http://stackoverflow.com/questions/11582512/how-to-get-url-parameters-with-javascript/11582513
@@ -214,18 +264,19 @@
 
   <!-- Header -->
   <header id="header" class="alt">
-    <!-- <a class="navbar-brand" href="#"> -->
     <a href="#">
-      <img style="max-width: 12em; margin-bottom: -14px; margin-top: -7px;"
+      <img style="max-width: 14em; margin-bottom: -14px; margin-top: -7px;"
            src="/images/horizontal-pensolve.png">
     </a>
-    <!-- </a> -->
-    <a href="https://app.pensolve.com/signup?ref=lp" class="descriptor">Simple. Thoughtful. Efficient.</a>
-
     <nav id="nav">
       <ul>
-        <!--<li><a href="contact.html">Contact</a></li>-->
-        <li><a href="https://app.pensolve.com/signup?ref=lp" onclick="clickedTrialPensolveAtBeginning()" class="button special">Online
+        <li><a href="how-to-use-pensolve.html" onclick="goToDemoVideo()" style="color:black;">Demo video</a></li>
+        <li><a href="spreadsheet-optimisation.html" onclick="findOutMore()" style="color:black;">Find out more</a></li>
+        <li><a href="videos.html" onclick="goToVideos()" style="color:black;">Videos</a></li>
+        <li><a href="steel-design-spreadsheet.html" onclick="goingToSteelExample()" style="color:black;">Example
+          file</a>
+        <li><a href="https://app.pensolve.com/signup?ref=lp" onclick="clickedTrialPensolveAtBeginning()"
+               class="button special">Online
           Free Trial</a></li>
       </ul>
     </nav>
@@ -235,7 +286,9 @@
   <!--<header class="main-header" role="banner">-->
   <!--<img src="/images/horizontal-pensolve.png" alt="Banner Image"/>-->
   <!--</header>-->
+
   <section id="banner">
+
     <div id="bgimg">
       <!--<image src="../../images/horizontal-pensolve.png" ></image>-->
 
@@ -246,61 +299,51 @@
         automatically wrap lines, so be sure to use line breaks where
         appropriate (<br />).
       -->
+
       <div class="inner">
+        <div class="center style container special-alt">
 
-        <header>
-          <h1>PENSOLVE</h1>
-        </header>
-        <p>Refine your engineering spreadsheets
-          <br/>
+          <div class="row">
+            <div class="5u 12u(narrower)">
+
+              <h2>More productive spreadsheets</h2>
+              <ul>
+                <li>Tranparent calculations</li>
+                <li>Uniform layout</li>
+                <li>Easy error checking</li>
+              </ul>
+
+              <a href="steel-design-spreadsheet.html" onclick="goingToSteelExample()" class="button">Example file</a>
+            </div>
+            <div class="7u 12u(narrower)">
+              <iframe src="https://player.vimeo.com/video/161422082" align="center" width="540vw" max-width="800"
+                      height="300vw" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+          </div>
           <footer>
-            <ul class="buttons vertical">
-              <li><a href="#why" onclick="clickedWhy()" class="button fit scrolly">What is Pensolve</a></li>
-            </ul>
           </footer>
-
+        </div>
       </div>
     </div>
 
   </section>
   <br/>
   <br/>
-  <br/>
-  <br/>
-  <br/>
+
 
   <!-- Main -->
   <article id="why">
     <!-- One -->
-    <section class="wrapper center style container special-alt">
-      <header>
-        <h2>Stop using spreadsheets as a black-box</h2>
+    <section class="wrapper center style3 container special-alt">
+      <header id="customers">
+        <h2>User testimonials</h2>
       </header>
-      <iframe src="https://player.vimeo.com/video/161422082" width="80%" max-width="800"
-              height="400vw" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-      <br/>
-      <br>
-      <footer>
-        <ul class="buttons">
-          <li><a href="steel-design-spreadsheet.html" onclick="goingToSteelExample()" class="button">Example file</a>
-          </li>
-          <li><a href="#demo" class="button special fit scrolly" onclick="goToDemoVideo()">Demo video</a></li>
-        </ul>
-      </footer>
-
-    </section>
-
-    <header id="customers" class="special container">
-      <span class="icon fa-table"></span>
-      <h2>User testimonials</h2>
-    </header>
-    <section class="wrapper style1 container special">
       <div class="row">
         <div class="4u 12u(narrower)">
           <section>
             <a href="http://do.y9.co.nz/" target="_blank" onclick="clickedToDOWebsite()">
-            <img style="max-width: 16em; margin-bottom: -14px; margin-top: 7px;"
-                 src="/images/DO_logo_round.png"></a>
+              <img style="max-width: 16em; margin-bottom: -14px; margin-top: 7px;"
+                   src="/images/DO_logo_round.png"></a>
           </section>
         </div>
         <div class="8u 12u(narrower)">
@@ -315,8 +358,8 @@
         <div class="4u 12u(narrower)">
           <section>
             <a href="http://www.bvt.co.nz/" target="_blank" onclick="clickedToBVTWebsite()">
-            <img style="max-width: 16em; margin-bottom: -14px; margin-top: 7px;"
-                 src="/images/BVT_logo.png"></a>
+              <img style="max-width: 16em; margin-bottom: -14px; margin-top: 7px;"
+                   src="/images/BVT_logo.png"></a>
           </section>
         </div>
         <div class="8u 12u(narrower)">
@@ -332,24 +375,76 @@
 
       </div>
     </section>
-    <section class="wrapper center style container special-alt" id="demo">
-      <header>
-        <h2>How to use Pensolve</h2>
-      </header>
-      <iframe src="https://www.youtube.com/embed/ySMB4Vhg5vM" width="80%" max-width="800"
-              height="400vw" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-      <br>
-      <footer>
-        <ul class="buttons">
-          <li><a href="https://drive.google.com/file/d/0Bzh4n5nh1xAIaUhtalU1X0VLSUU/view?usp=sharing" target="_blank"
-                 onclick="downloadGettingStartedGuide()" class="button">Download Getting started guide</a></li>
-          <a href="#more"
-                 onclick="learnMore()" class="button scrolly">Learn more</a></li>
-        </ul>
-      </footer>
-      </section>
-    <section class="wrapper style1 container special">
+    <section class="wrapper center style4 container special-alt" id="more">
+      <div>
+        <header>
+          <h2>Why use Pensolve?</h2>
+        </header>
+        <iframe src="https://www.youtube.com/embed/HPXg-4WkhSw" width="80%" max-width="800"
+                height="400vw" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+        <br>
+        <footer>
+          <ul class="buttons">
+            <li><a href="https://app.pensolve.com/signup?ref=lp" onclick="clickedTrialPensolveBelowVideo()"
+                   class="button special">Trial now</a>
+            </li>
+            <li><a href="spreadsheet-optimisation.html" onclick="findOutMore()" class="button">Find out more</a></li>
+          </ul>
+        </footer>
+        <br>
+
+        <div class="row">
+          <div class="4u 12u(narrower)">
+
+            <section>
+              <span class="icon featured fa-check"></span>
+              <header>
+                <h3>Reduced review time</h3>
+              </header>
+              <p>Pensolve converts spreadsheets into transparent formats that are set up for self and peer review</p>
+            </section>
+
+          </div>
+          <div class="4u 12u(narrower)">
+
+            <section>
+              <span class="icon featured fa-check"></span>
+              <header>
+                <h3>Manage risk</h3>
+              </header>
+              <p>Find operational and design errors that are obscured in spreadsheets</p>
+            </section>
+
+          </div>
+          <div class="4u 12u(narrower)">
+
+            <section>
+              <span class="icon featured fa-check"></span>
+              <header>
+                <h3>Shareable spreadsheets</h3>
+              </header>
+              <p>Pensolve prompts users to provide clear and simple spreadsheet layouts, so that everyone can use
+                them</p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="example-images" class="wrapper container style2">
+      <h1 align="center" class="new-title">Engineering spreadsheet review</h1>
+
+      <h2 align="center">Spreadsheet format</h2>
+      <img src="images/Pensolve_spreadsheet_view.svg" alt="Spreadsheet view" style="width: 100%;">
+
+      <h2 align="center">Pensolve review format</h2>
+      <img src="images/Pensolve_report_view.svg" alt="Spreadsheet view" style="width: 100%;">
+    </section>
+
+    <section class="wrapper style4 container special">
       <div class="row">
         <!--<div class="2u 12u(narrower)">-->
         <!--</div>-->
@@ -383,59 +478,7 @@
         </div>
       </div>
     </section>
-    <section class="wrapper center style container special-alt" id="more">
-      <header>
-        <h2>Why use Pensolve?</h2>
-      </header>
-      <iframe src="https://www.youtube.com/embed/HPXg-4WkhSw" width="80%" max-width="800"
-              height="400vw" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-      <br>
-      <footer>
-        <ul class="buttons">
-          <li><a href="steel-design-spreadsheet.html" onclick="goingToSteelExample()" class="button">Example file</a>
-          </li>
-          <li><a href="spreadsheet-optimisation.html" onclick="findOutMore()" class="button">Details</a></li>
-        </ul>
-      </footer>
-      <br>
-      <div class="row">
-        <div class="4u 12u(narrower)">
-
-          <section>
-            <span class="icon featured fa-check"></span>
-            <header>
-              <h3>Reduced review time</h3>
-            </header>
-            <p>Pensolve converts spreadsheets into transparent formats that are set up for self and peer review</p>
-          </section>
-
-        </div>
-        <div class="4u 12u(narrower)">
-
-          <section>
-            <span class="icon featured fa-check"></span>
-            <header>
-              <h3>Manage risk</h3>
-            </header>
-            <p>Find operational and design errors that are obscured in spreadsheets</p>
-          </section>
-
-        </div>
-        <div class="4u 12u(narrower)">
-
-          <section>
-            <span class="icon featured fa-check"></span>
-            <header>
-              <h3>Shareable spreadsheets</h3>
-            </header>
-            <p>Pensolve prompts users to provide clear and simple spreadsheet layouts, so that everyone can use them</p>
-          </section>
-
-        </div>
-
-      </div>
-    </section>
     <section id="cta">
       <div class="inner">
         <header>
@@ -484,9 +527,6 @@
       <!--<li>&copy; 2015 All Rights Reserved</li>-->
       <li><a href="http://pensolve.com/blog" onclick="goToBlog()">Blog</a></li>
       <li><a href="education.html" onclick="goingToEducationSite()">Pensolve for Education</a></li>
-      <li><a href="videos.html" onclick="goToVideos()">Videos</a></li>
-      <!--<li><a href="https://twitter.com/pensolve">Blog</a></li>-->
-      <li><a href="spreadsheet-optimisation.html" onclick="findOutMore()">Find out more</a></li>
       <li><a href="https://docs.google.com/document/d/1fXK7QoRWJerB9UKkFqDYeubYcmxXmMkDMoyh1ufNx7I/edit?usp=sharing">Terms
         of service</a></li>
       <li><a href="https://docs.google.com/document/d/1i0LxowM9hNJgH04LMujNwL6r9V67TQZEQL7ZZtii83w/edit?usp=sharing">Privacy
