@@ -164,99 +164,9 @@
       mixpanel.track("Clicked to BVT website")
     }
     $(function () {
-      console.log("loading vimeo event stuff");
-      var player = $('iframe');
-      var playerOrigin = '*';
-      // Listen for messages from the player
-      if (window.addEventListener) {
-        window.addEventListener('message', onMessageReceived, false);
-      }
-      else {
-        window.attachEvent('onmessage', onMessageReceived, false);
-      }
-      // Helper function for sending a message to the player
-      function post(action, value) {
-        var data = {
-          method: action
-        };
+        console.log("loading youtube event stuff");
+      })
 
-        if (value) {
-          data.value = value;
-        }
-
-        var message = JSON.stringify(data);
-        player[0].contentWindow.postMessage(message, playerOrigin);
-      }
-
-      // Handle messages received from the player
-      function onMessageReceived(event) {
-        // Handle messages from the vimeo player only
-        if (!(/^https?:\/\/player.vimeo.com/).test(event.origin)) {
-          return false;
-        }
-
-        if (playerOrigin === '*') {
-          playerOrigin = event.origin;
-        }
-
-        var data = JSON.parse(event.data);
-        switch (data.event) {
-          case 'ready':
-            onReady();
-            break;
-          case 'playProgress':
-            onPlayProgress(data.data);
-            break;
-
-          case 'pause':
-            onPause();
-            break;
-
-          case 'finish':
-            onFinish();
-            break;
-        }
-      }
-
-      function onReady() {
-        console.log('ready event fired!');
-
-        post('addEventListener', 'pause');
-        post('addEventListener', 'finish');
-        post('addEventListener', 'playProgress');
-      }
-
-      var isPlaying = false;
-
-      function onPlayProgress(data) {
-        if (!isPlaying) {
-          console.log('play event fired! - ' + data);
-          if (data.percent < 1) {
-            mixpanel.track('Video playing from beginning', {
-              percent: data.percent
-            });
-          } else {
-            mixpanel.track('Video continued playing', {
-              percent: data.percent
-            });
-
-          }
-          isPlaying = true;
-        }
-      }
-
-      function onPause() {
-        console.log('pause event fired!');
-        mixpanel.track('Video paused');
-        isPlaying = false;
-      }
-
-      function onFinish() {
-        console.log('finish event fired!');
-        mixpanel.track('Video finished');
-        isPlaying = false;
-      }
-    });
   </script>
 </head>
 <body class="index">
@@ -315,8 +225,8 @@
 
               <a href="steel-design-spreadsheet.html" onclick="goingToSteelExample()" class="button">Example file</a>
             </div>
-            <div class="7u 12u(narrower)">
-              <iframe src="https://www.youtube.com/embed/oF4OvY1b4Rw" align="center" width="540vw" max-width="800"
+            <div id="video_holder" class="7u 12u(narrower)">
+              <iframe id="video1" src="https://www.youtube.com/embed/oF4OvY1b4Rw" align="center" width="540vw" max-width="800"
                       height="300vw" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
           </div>
