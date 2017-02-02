@@ -148,6 +148,9 @@
     function goToDemoVideo() {
       mixpanel.track("Clicked go to demo video");
     }
+    function goingToPricing() {
+      mixpanel.track("Clicked go to pricing");
+    }
     function clickedPricing() {
       mixpanel.track("Clicked Pricing link");
       window.open('https://app.pensolve.com/upgrade?ref=lp');
@@ -184,7 +187,8 @@
         <li><a href="spreadsheet-optimisation.html" onclick="findOutMore()" style="color:black;">Find out more</a></li>
         <li><a href="videos.html" onclick="goToVideos()" style="color:black;">Videos</a></li>
         <li><a href="steel-design-spreadsheet.html" onclick="goingToSteelExample()" style="color:black;">Example
-          file</a>
+          file</a></li>
+        <li><a href="https://app.pensolve.com/upgrade?ref=lp" onclick="goingToPricing()" style="color:black;">Pricing</a></li>
         <li><a href="https://app.pensolve.com/signup?ref=lp" onclick="clickedTrialPensolveAtBeginning()"
                class="button special">Online
           Free Trial</a></li>
