@@ -19,9 +19,12 @@
 		vertical-align: baseline;
 	}
 
-	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, section {
 		display: block;
 	}
+  nav {
+    margin-left: 300px;
+  }
 
 	body {
 		line-height: 1;
