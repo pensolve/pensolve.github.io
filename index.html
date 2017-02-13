@@ -12,7 +12,8 @@
   <title>Pensolve | Engineering spreadsheet review software</title>
   <meta name="keywords"
         content="Engineering spreadsheets, spreadsheet design, engineering calculations, Structural engineering"/>
-  <meta charset="utf-8"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="description" content="Pensolve is the solution to managing and reviewing your engineering spreadsheets.">
 
   <!-- Short description of your sites subject -->
@@ -36,25 +37,25 @@
   <!--[if lte IE 8]>
   <script src="assets/js/ie/respond.min.js"></script><![endif]-->
   <!-- Begin Inspectlet Embed Code -->
-  <script type="text/javascript" id="inspectletjs">
-    window.__insp = window.__insp || [];
-    __insp.push(['wid', 397416662]);
-    (function () {
-      function ldinsp() {
-        if (typeof window.__inspld != "undefined") return;
-        window.__inspld = 1;
-        var insp = document.createElement('script');
-        insp.type = 'text/javascript';
-        insp.async = true;
-        insp.id = "inspsync";
-        insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js';
-        var x = document.getElementsByTagName('script')[0];
-        x.parentNode.insertBefore(insp, x);
-      };
-      setTimeout(ldinsp, 500);
-      document.readyState != "complete" ? (window.attachEvent ? window.attachEvent('onload', ldinsp) : window.addEventListener('load', ldinsp, false)) : ldinsp();
-    })();
-  </script>
+  <!--<script type="text/javascript" id="inspectletjs">-->
+    <!--window.__insp = window.__insp || [];-->
+    <!--__insp.push(['wid', 397416662]);-->
+    <!--(function () {-->
+      <!--function ldinsp() {-->
+        <!--if (typeof window.__inspld != "undefined") return;-->
+        <!--window.__inspld = 1;-->
+        <!--var insp = document.createElement('script');-->
+        <!--insp.type = 'text/javascript';-->
+        <!--insp.async = true;-->
+        <!--insp.id = "inspsync";-->
+        <!--insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js';-->
+        <!--var x = document.getElementsByTagName('script')[0];-->
+        <!--x.parentNode.insertBefore(insp, x);-->
+      <!--};-->
+      <!--setTimeout(ldinsp, 500);-->
+      <!--document.readyState != "complete" ? (window.attachEvent ? window.attachEvent('onload', ldinsp) : window.addEventListener('load', ldinsp, false)) : ldinsp();-->
+    <!--})();-->
+  <!--</script>-->
   <!-- End Inspectlet Embed Code -->
   <script async src="assets/js/main.js"></script>
   <!-- start Mixpanel -->
@@ -234,10 +235,13 @@
               </div>
               <a href="steel-design-spreadsheet.html" onclick="goingToSteelExample()" class="button">Example file</a>
             </div>
+
             <div id="video_holder" class="7u 12u(narrower)" align="center">
-              <iframe id="video1" src="https://www.youtube.com/embed/oF4OvY1b4Rw" align="center" width="540vw"
-                      max-width="800"
-                      height="300vw" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+    <div id="player"></div>
+              <!--<iframe id="video1" src="https://www.youtube.com/embed/oF4OvY1b4Rw" align="center" width="540vw"-->
+                      <!--max-width="100%"-->
+                      <!--height="300vw" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
             </div>
           </div>
           <footer>
@@ -399,6 +403,8 @@
       </div>
     </section>
 
+
+
     <section id="cta">
       <div class="inner">
         <header>
@@ -469,6 +475,40 @@
 
 <!-- Scripts -->
 <script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          width: '100%',
+          videoId: 'oF4OvY1b4Rw',
+          events: {
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING) {
+          mixpanel.track('Video playing');
+        } else if (event.data == YT.PlayerState.ENDED) {
+          mixpanel.track('Video finished');
+        } else if (event.data == YT.PlayerState.PAUSED) {
+          mixpanel.track('Video paused');
+        }
+      }
+    </script>
+<script>
   (function (i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r;
     i[r] = i[r] || function () {
@@ -485,6 +525,7 @@
   ga('send', 'pageview');
 
 </script>
+
 
 </body>
 </html>
