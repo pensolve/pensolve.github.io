@@ -9,6 +9,8 @@
 		var	$this = $(this);
 			$a = $this.find('a'),
 			b = [];
+    b.push('<a class="link depth-0" href="index.html";><span class="indent-0"></span>Home</a>');
+    b.push('<a class="link depth-0" href="#customers";><span class="indent-0"></span>User Testimonials</a>');
 
 		$a.each(function() {
 
@@ -27,8 +29,8 @@
 					$this.text() +
 				'</a>'
 			);
-
 		});
+
 
 		return b.join('');
 
