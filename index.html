@@ -98,7 +98,8 @@
       f.parentNode.insertBefore(a, f)
     }
   })(document, window.mixpanel || []);
-  mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script>
+  mixpanel.init("43de57938647ce584cc0a25ceb448d1c");
+  </script>
   <!-- end Mixpanel -->
   <script type="text/javascript">
     function getURLParameter(name) {
@@ -167,6 +168,9 @@
     function clickedToBVTWebsite() {
       mixpanel.track("Clicked to BVT website")
     }
+    function installGoogleAddOn() {
+      mixpanel.track("Clicked to install Google Add-on")
+    }
     $(function () {
       console.log("loading youtube event stuff");
     })
@@ -182,7 +186,7 @@
       <img style="max-width: 14em; margin-bottom: -14px; margin-top: -7px;"
            src="/images/horizontal-pensolve.png">
     </a>
-    <nav id="nav" style="margin-left: 200px; margin-right: 205px;">
+    <nav id="nav" style="margin-left: 200px; margin-right: 225px;">
       <ul>
         <li><a href="how-to-use-pensolve.html" onclick="goToDemoVideo()" style="color:black;">Demo video</a></li>
         <li><a href="spreadsheet-optimisation.html" onclick="findOutMore()" style="color:black;">Find out more</a></li>
@@ -254,6 +258,36 @@
   <br/>
   <br/>
 
+
+  <!-- Main -->
+  <article id="google-app">
+    <!-- One -->
+    <section class="wrapper center style5 container special-alt">
+      <header id="google">
+        <h2>New Google Sheets integration</h2>
+      </header>
+      <div class="row">
+        <div class="8u 12u(narrower)">
+          <section>
+            <a href="http://do.y9.co.nz/" target="_blank" onclick="clickedToDOWebsite()">
+              <img style="width: 36em; max-width: 100%; margin-bottom: -14px; margin-top: 7px;"
+                   src="/images/Pensolve-Google-Sheets-Add-on.png"></a>
+          </section>
+        </div>
+        <div class="4u 12u(narrower)" align="left">
+          <ul style="padding-left: 15%">
+                  <li>Better visualisation within the spreadsheet</li>
+                  <li>One-click conversion to PDF</li>
+                  <li>One-click install</li>
+                </ul>
+          <div align="center">
+          <a href="https://chrome.google.com/webstore/detail/pensolve/acopnipibfgpgbchinapckibeoemeiml?hl=en" onclick="installGoogleAddOn()" class="button special" target="_blank">Install now</a>
+        </div>
+          </div>
+
+      </div>
+
+    </section>
 
   <!-- Main -->
   <article id="why">

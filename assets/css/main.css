@@ -2130,7 +2130,7 @@
 
 	.wrapper {
 		margin-bottom: 1em;
-		padding: 5em;
+		padding: 3em;
 	}
 
 		.wrapper.style1 {
@@ -2170,6 +2170,11 @@
 			background: #fff;
 			color: inherit;
 			padding: 4em;
+		}
+
+    .wrapper.style5 {
+			background: linear-gradient(to left top, #f5f5f5, #fffab0, #f5f5f5);
+			color: inherit;
 		}
 
 /* Header */
@@ -2362,7 +2367,7 @@
 		min-width: 13em;
 		padding: 1em 0;
 		text-transform: uppercase;
-		margin-top: calc(-1em + 1px);
+		margin-top: 1px;
 	}
 
 		.dropotron.level-0 {
@@ -3312,4 +3317,10 @@
 .easy-read {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
+}
+
+.changes {
+  max-width: 900px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
