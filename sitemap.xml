@@ -1,159 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+    <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-<url>
-  <loc>http://pensolve.com/</loc>
-  <lastmod>2016-08-26T04:13:16+00:00</lastmod>
-  <changefreq>daily</changefreq>
-</url>
-<url>
-  <loc>http://pensolve.com/spreadsheet-optimisation.html</loc>
-  <lastmod>2016-08-26T04:13:16+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://pensolve.com/blog/</loc>
-  <lastmod>2016-06-27T01:45:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://pensolve.com/team.html</loc>
-  <lastmod>2016-06-27T01:45:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
     <url>
-  <loc>http://pensolve.com/steel-beam-spreadsheet.html</loc>
-  <lastmod>2016-08-01T01:45:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://pensolve.com/education.html</loc>
-  <lastmod>2016-07-26T04:13:16+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
+        <loc>http://pensolve.com/</loc>
+        <lastmod>2016-08-26T04:13:16+00:00</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
     <url>
-  <loc>http://app.pensolve.com/example-files</loc>
-  <lastmod>2016-06-27T01:45:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
+        <loc>http://pensolve.com/spreadsheet-optimisation.html</loc>
+        <lastmod>2016-08-26T04:13:16+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
     <url>
-  <loc>http://app.pensolve.com/faqs</loc>
-  <lastmod>2016-06-27T01:45:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://pensolve.com/blog//2016/06/27/blog-Engineering_spreadsheets1/</loc>
-  <lastmod>2016-06-27T01:45:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://pensolve.com/blog/page2/</loc>
-  <lastmod>2016-06-27T01:45:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://pensolve.com/blog/2016/06/20/blog-FT-article/</loc>
-  <lastmod>2016-06-27T01:45:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://pensolve.com/blog/2016/06/12/blog-Modal-analysis/</loc>
-  <lastmod>2016-06-27T01:45:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://pensolve.com/blog/2016/06/08/blog-Showcasing-Canterbury/</loc>
-  <lastmod>2016-06-27T01:45:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://pensolve.com/blog//2016/06/20/blog-FT-article/</loc>
-  <lastmod>2016-06-27T01:45:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://pensolve.com/blog/page3/</loc>
-  <lastmod>2016-06-27T01:45:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://pensolve.com/blog/2016/06/27/blog-Engineering_spreadsheets1/</loc>
-  <lastmod>2016-06-27T01:45:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://pensolve.com/blog//2016/06/12/blog-Modal-analysis/</loc>
-  <lastmod>2016-06-27T01:45:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://pensolve.com/blog/page4/</loc>
-  <lastmod>2016-06-27T01:45:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://pensolve.com/blog//2016/06/08/blog-Showcasing-Canterbury/</loc>
-  <lastmod>2016-06-27T01:45:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://pensolve.com/blog/page5/</loc>
-  <lastmod>2016-06-27T01:45:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://pensolve.com/blog//2016/01/15/blog-Force-based-versus-Displacement-based-design/</loc>
-  <lastmod>2016-06-27T01:45:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://pensolve.com/blog/page6/</loc>
-  <lastmod>2016-06-27T01:45:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://pensolve.com/blog//2015/12/22/riddle/</loc>
-  <lastmod>2016-06-27T01:45:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://pensolve.com/blog/page7/</loc>
-  <lastmod>2016-06-27T01:45:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://pensolve.com/blog//2015/11/24/blog-Equivalent-viscous-damping/</loc>
-  <lastmod>2016-06-27T01:45:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://pensolve.com/blog/page8/</loc>
-  <lastmod>2016-06-27T01:45:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://pensolve.com/blog//2015/11/15/blog-error-finding-features/</loc>
-  <lastmod>2016-06-27T01:45:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://pensolve.com/blog/page9/</loc>
-  <lastmod>2016-06-27T01:45:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://pensolve.com/blog//2015/10/20/equation-tracking/</loc>
-  <lastmod>2016-06-27T01:45:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://pensolve.com/blog/page10/</loc>
-  <lastmod>2016-06-27T01:45:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
+        <loc>http://pensolve.com/terms-of-service.html</loc>
+        <lastmod>2017-04-04T04:13:16+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>http://pensolve.com/privacy-policy.html</loc>
+        <lastmod>2017-04-04T04:13:16+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>http://pensolve.com/faqs.html</loc>
+        <lastmod>2017-04-04T04:13:16+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://pensolve.com/change-log.html</loc>
+        <lastmod>2017-04-04T04:13:16+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://pensolve.com/blog/</loc>
+        <lastmod>2016-06-27T01:45:31+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://pensolve.com/team.html</loc>
+        <lastmod>2016-06-27T01:45:31+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://pensolve.com/steel-beam-spreadsheet.html</loc>
+        <lastmod>2016-08-01T01:45:31+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://pensolve.com/education.html</loc>
+        <lastmod>2016-07-26T04:13:16+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://app.pensolve.com/example-files</loc>
+        <lastmod>2016-06-27T01:45:31+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://app.pensolve.com/faqs</loc>
+        <lastmod>2016-06-27T01:45:31+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://pensolve.com/blog//2016/06/27/blog-Engineering_spreadsheets1/</loc>
+        <lastmod>2016-06-27T01:45:31+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://pensolve.com/blog/page2/</loc>
+        <lastmod>2016-06-27T01:45:31+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://pensolve.com/blog/2016/06/20/blog-FT-article/</loc>
+        <lastmod>2016-06-27T01:45:31+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://pensolve.com/blog/2016/06/12/blog-Modal-analysis/</loc>
+        <lastmod>2016-06-27T01:45:31+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://pensolve.com/blog/2016/06/08/blog-Showcasing-Canterbury/</loc>
+        <lastmod>2016-06-27T01:45:31+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://pensolve.com/blog//2016/06/20/blog-FT-article/</loc>
+        <lastmod>2016-06-27T01:45:31+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://pensolve.com/blog/page3/</loc>
+        <lastmod>2016-06-27T01:45:31+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://pensolve.com/blog/2016/06/27/blog-Engineering_spreadsheets1/</loc>
+        <lastmod>2016-06-27T01:45:31+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://pensolve.com/blog//2016/06/12/blog-Modal-analysis/</loc>
+        <lastmod>2016-06-27T01:45:31+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://pensolve.com/blog/page4/</loc>
+        <lastmod>2016-06-27T01:45:31+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://pensolve.com/blog//2016/06/08/blog-Showcasing-Canterbury/</loc>
+        <lastmod>2016-06-27T01:45:31+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://pensolve.com/blog/page5/</loc>
+        <lastmod>2016-06-27T01:45:31+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://pensolve.com/blog//2016/01/15/blog-Force-based-versus-Displacement-based-design/</loc>
+        <lastmod>2016-06-27T01:45:31+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://pensolve.com/blog/page6/</loc>
+        <lastmod>2016-06-27T01:45:31+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://pensolve.com/blog//2015/12/22/riddle/</loc>
+        <lastmod>2016-06-27T01:45:31+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://pensolve.com/blog/page7/</loc>
+        <lastmod>2016-06-27T01:45:31+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://pensolve.com/blog//2015/11/24/blog-Equivalent-viscous-damping/</loc>
+        <lastmod>2016-06-27T01:45:31+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://pensolve.com/blog/page8/</loc>
+        <lastmod>2016-06-27T01:45:31+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://pensolve.com/blog//2015/11/15/blog-error-finding-features/</loc>
+        <lastmod>2016-06-27T01:45:31+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://pensolve.com/blog/page9/</loc>
+        <lastmod>2016-06-27T01:45:31+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://pensolve.com/blog//2015/10/20/equation-tracking/</loc>
+        <lastmod>2016-06-27T01:45:31+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://pensolve.com/blog/page10/</loc>
+        <lastmod>2016-06-27T01:45:31+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
 </urlset>
