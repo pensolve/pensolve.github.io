@@ -1,0 +1,268 @@
+<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+  <title>Pensolve Add-ins</title>
+  <meta name="keywords" content="spreadsheet plug-in, spreadsheet add-in, engineering calculations"/>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <!--[if lte IE 8]>
+  <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+  <link rel="stylesheet" type="text/css" href="common.css">
+  <link rel="stylesheet" href="assets/css/main.css"/>
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
+  <!--[if lte IE 9]>
+  <link rel="stylesheet" href="assets/css/ie9.css"/><![endif]-->
+  <script src="calculate-roi.js"></script>
+  <!-- start Mixpanel -->
+  <!--<script type="text/javascript">(function (e, b) {-->
+  <!--if (!b.__SV) {-->
+  <!--var a, f, i, g;-->
+  <!--window.mixpanel = b;-->
+  <!--b._i = [];-->
+  <!--b.init = function (a, e, d) {-->
+  <!--function f(b, h) {-->
+  <!--var a = h.split(".");-->
+  <!--2 == a.length && (b = b[a[0]], h = a[1]);-->
+  <!--b[h] = function () {-->
+  <!--b.push([h].concat(Array.prototype.slice.call(arguments, 0)))-->
+  <!--}-->
+  <!--}-->
+
+  <!--var c = b;-->
+  <!--"undefined" !== typeof d ? c = b[d] = [] : d = "mixpanel";-->
+  <!--c.people = c.people || [];-->
+  <!--c.toString = function (b) {-->
+  <!--var a = "mixpanel";-->
+  <!--"mixpanel" !== d && (a += "." + d);-->
+  <!--b || (a += " (stub)");-->
+  <!--return a-->
+  <!--};-->
+  <!--c.people.toString = function () {-->
+  <!--return c.toString(1) + ".people (stub)"-->
+  <!--};-->
+  <!--i = "disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");-->
+  <!--for (g = 0; g < i.length; g++)f(c, i[g]);-->
+  <!--b._i.push([a, e, d])-->
+  <!--};-->
+  <!--b.__SV = 1.2;-->
+  <!--a = e.createElement("script");-->
+  <!--a.type = "text/javascript";-->
+  <!--a.async = !0;-->
+  <!--a.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === e.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";-->
+  <!--f = e.getElementsByTagName("script")[0];-->
+  <!--f.parentNode.insertBefore(a, f)-->
+  <!--}-->
+  <!--})(document, window.mixpanel || []);-->
+  <!--mixpanel.init("43de57938647ce584cc0a25ceb448d1c");</script>-->
+  <!-- end Mixpanel -->
+  <script type="text/javascript">
+    mixpanel.register_once({"Source of traffic": source()});
+    mixpanel.track('Visit More Info Page');
+    function installExcelAddin() {
+      mixpanel.track("install Excel Add-in", {
+      });
+      window.open('https://app.pensolve.com/signup?ref=lp');
+    }
+    function clickedImReadyInWhy() {
+      mixpanel.track("Transferred to Pensolve app", {
+        source: "Clicked I'm Ready button in Why"
+      })
+    }
+    function clickedSubmitROICalculator() {
+      mixpanel.track("Clicked calculate ROI", {
+        source: "Clicked ROI"
+      });
+      calculateROI()
+    }
+  </script>
+</head>
+
+<!-- Header -->
+<header id="header" class="alt">
+  <a href="/">
+    <img style="max-width: 14em; margin-bottom: -14px; margin-top: -7px;"
+         src="/images/horizontal-pensolve.png">
+  </a>
+  <nav id="nav">
+    <ul>
+      <li><a href="how-to-use-pensolve.html" onclick="goToDemoVideo()" style="color:black;">Demo video</a></li>
+      <li><a href="spreadsheet-optimisation.html" onclick="findOutMore()" style="color:black;">Find out more</a></li>
+      <li><a href="videos.html" onclick="goToVideos()" style="color:black;">Videos</a></li>
+      <li><a href="steel-design-spreadsheet.html" onclick="goingToSteelExample()" style="color:black;">Example
+        file</a>
+      <li><a href="https://app.pensolve.com/signup?ref=lp" onclick="clickedTrialPensolveAtBeginning()"
+             class="button special">Online Free Trial</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<br/>
+<br/>
+
+
+<body class="contact">
+
+<div id="page-wrapper">
+  <!-- Two -->
+  <section class="wrapper style6 container special">
+    <div class="row">
+      <h2 style="margin-top: 15px">Pensolve Add-ins</h2>
+
+      <p>The Excel and Google Sheets add-ins provide a convenient way
+        to interact with the Pensolve services within the spreadsheet.</p>
+
+      <div class="4u 12u(narrower)">
+        <button class="add-in-button actual">Assess spreadsheet</button>
+      </div>
+      <div class="8u 12u(narrower)">
+        <p>The Assess spreadsheet button send the spreadsheet to the Pensolve servers to be processed,
+          and receives an assessment of the spreadsheet which can be used to display
+          equations, view dependents and indicate the use of cells though colors.</p>
+      </div>
+      <div class="4u 12u(narrower)">
+        <button class="add-in-button actual" style="background: rgba(252,69,69,0.8);">Convert to PDF</button>
+      </div>
+      <div class="8u 12u(narrower)">
+        <p>The "Convert to PDF" button allow you to convert the spreadsheet into a PDF in hand-written
+          calculation format, by sending the spreadsheet to the Pensolve server to process it
+          and providing a link to the converted file</p>
+      </div>
+    </div>
+    </section>
+  <section class="wrapper style2 container special tight-section" id="markup-colors">
+    <h3 style="padding-bottom: 10px">Pensolve mark up colors</h3>
+
+    <div class="row">
+      <div class="4u 12u(narrower)">
+        <button class="add-in-button color-legend" style="background: #fff3ba;"></button>
+      </div>
+      <div class="8u 12u(narrower)">
+        <p>Constant: A single cell that is used as an input for calculations.</p>
+      </div>
+      </div>
+    <div class="row">
+      <div class="4u 12u(narrower)">
+        <button class="add-in-button color-legend" style="background: #fbffd2;"></button>
+      </div>
+      <div class="8u 12u(narrower)">
+        <p>Repeated Constant: An array of cells that are used as inputs for calculations.</p>
+      </div>
+</div>
+    <div class="row">
+      <div class="4u 12u(narrower)">
+        <button class="add-in-button color-legend" style="background: #d0f097;"></button>
+      </div>
+      <div class="8u 12u(narrower)">
+        <p>Expression: A single calculation cell.</p>
+      </div>
+</div>
+    <div class="row">
+      <div class="4u 12u(narrower)">
+        <button class="add-in-button color-legend" style="background: #def3c8;"></button>
+      </div>
+      <div class="8u 12u(narrower)">
+        <p>Repeated expression: An array of calculation cells.</p>
+      </div>
+</div>
+    <div class="row">
+      <div class="4u 12u(narrower)">
+        <button class="add-in-button color-legend" style="background: #dfdfdf;"></button>
+      </div>
+      <div class="8u 12u(narrower)">
+        <p>Section header: A title of a new calculation section or subsection</p>
+      </div>
+      </div>
+    <div class="row">
+      <div class="4u 12u(narrower)">
+        <button class="add-in-button color-legend" style="background: #ff786e;"></button>
+      </div>
+      <div class="8u 12u(narrower)">
+        <p>Unused: A cell that is not used in any calculations and is not a comment, note, summary text or section header.</p>
+      </div>
+
+    </div>
+
+    <div align="center" style="width: 100%; padding-top: 15px">
+    <ul class="buttons">
+      <!--<li><a href="#what" onclick="clickedHow()" class="button scrolly">How can Pensolve help?</a></li>-->
+      <li><a href="#" onclick="installExcelAddin()" class="button special">Excel Add-in</a></li>
+    </ul>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+
+    <ul class="icons">
+      <li><a href="https://www.linkedin.com/company/pensolve" class="icon circle fa-linkedin"><span class="label">LinkedIn</span></a>
+      </li>
+      <li><a href="https://www.twitter.com/pensolve" class="icon circle fa-twitter"><span
+        class="label">Twitter</span></a></li>
+      <li><a href="https://www.facebook.com/twitter" class="icon circle fa-facebook"><span class="label">Facebook</span></a>
+      </li>
+    </ul>
+
+    <ul class="copyright">
+      <li>&copy; 2015 All Rights Reserved</li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="videos.html">Videos</a></li>
+      <li><a href="http://www.pensolve.com/blog/">Blog</a></li>
+      <!-- <li><a href="spreadsheet-optimisation.html">Find out more</a></li> -->
+      <li><a href="https://docs.google.com/document/d/1fXK7QoRWJerB9UKkFqDYeubYcmxXmMkDMoyh1ufNx7I/edit?usp=sharing">Terms
+        of service</a></li>
+      <li><a href="https://docs.google.com/document/d/1i0LxowM9hNJgH04LMujNwL6r9V67TQZEQL7ZZtii83w/edit?usp=sharing">Privacy
+        Policy</a></li>
+    </ul>
+
+    <ul class="contact">
+      <li><strong>Contact details</strong></li>
+      <li>GreenHouse</li>
+      <li>146A Lichfield Street</li>
+      <li>Christchurch 8011</li>
+      <li>New Zealand</li>
+      <li>+64 27 346 5818</li>
+    </ul>
+
+  </footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrollgress.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<!--[if lte IE 8]>
+<script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="assets/js/main.js"></script>
+
+<!-- Scripts -->
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-64454797-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
