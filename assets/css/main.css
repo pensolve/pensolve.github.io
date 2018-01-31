@@ -3377,3 +3377,8 @@
   margin-bottom: 2px;
   text-align: left;
 }
+
+.error-notice {
+  background: rgba(255, 140, 140, 0.8);
+  padding: 6px 6px 6px 6px;
+}
