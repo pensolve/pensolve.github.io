@@ -1,5 +1,8 @@
 Pensolve Landing page
 
+
+`python -m http.server 8000`
+
 Based of Twenty by HTML5UP
 
 - Ignore SCSS files, currently not used.
