@@ -64,16 +64,18 @@
   <script type="text/javascript">
     mixpanel.register_once({"Source of traffic": source()});
     mixpanel.track('Visit More Info Page');
+
     function installExcelAddin() {
-      mixpanel.track("install Excel Add-in", {
-      });
+      mixpanel.track("install Excel Add-in", {});
       window.open('https://app.pensolve.com/signup?ref=lp');
     }
+
     function clickedImReadyInWhy() {
       mixpanel.track("Transferred to Pensolve app", {
         source: "Clicked I'm Ready button in Why"
       })
     }
+
     function clickedSubmitROICalculator() {
       mixpanel.track("Clicked calculate ROI", {
         source: "Clicked ROI"
@@ -143,68 +145,145 @@
           and providing a link to the converted file</p>
       </div>
     </div>
-    </section>
+  </section>
 
   <section class="wrapper style6 container special tight-section" id="markup-colors">
-    <h3 style="padding-bottom: 10px">Pensolve mark up colors</h3>
+    <h3 style="padding-bottom: 10px">Pensolve mark up cell colors</h3>
     <div style="background: white; padding: 10px; border-radius: 5px">
 
-    <div class="row">
-      <div class="4u 12u(narrower)">
-        <button class="add-in-button color-legend" style="background: #fff3ba;"></button>
+      <div class="row">
+        <div class="4u 12u(narrower)">
+          <button class="add-in-button color-legend" style="background: #fff3ba;"></button>
+        </div>
+        <div class="8u 12u(narrower)">
+          <p>Constant: A single cell that is used as an input for calculations.</p>
+        </div>
       </div>
-      <div class="8u 12u(narrower)">
-        <p>Constant: A single cell that is used as an input for calculations.</p>
+      <div class="row">
+        <div class="4u 12u(narrower)">
+          <button class="add-in-button color-legend" style="background: #fbffd2;"></button>
+        </div>
+        <div class="8u 12u(narrower)">
+          <p>Repeated Constant: An array of cells that are used as inputs for calculations.</p>
+        </div>
       </div>
+      <div class="row">
+        <div class="4u 12u(narrower)">
+          <button class="add-in-button color-legend" style="background: #ddf9ff;"></button>
+        </div>
+        <div class="8u 12u(narrower)">
+          <p>Expression: A single calculation cell.</p>
+        </div>
       </div>
-    <div class="row">
-      <div class="4u 12u(narrower)">
-        <button class="add-in-button color-legend" style="background: #fbffd2;"></button>
+      <div class="row">
+        <div class="4u 12u(narrower)">
+          <button class="add-in-button color-legend" style="background: #e5feff;"></button>
+        </div>
+        <div class="8u 12u(narrower)">
+          <p>Repeated expression: An array of calculation cells.</p>
+        </div>
       </div>
-      <div class="8u 12u(narrower)">
-        <p>Repeated Constant: An array of cells that are used as inputs for calculations.</p>
+      <div class="row">
+        <div class="4u 12u(narrower)">
+          <button class="add-in-button color-legend" style="background: rgb(223, 223, 223);"></button>
+        </div>
+        <div class="8u 12u(narrower)">
+          <p>Section header: A title of a new calculation section or subsection</p>
+        </div>
       </div>
-</div>
-    <div class="row">
-      <div class="4u 12u(narrower)">
-        <button class="add-in-button color-legend" style="background: #ddf9ff;"></button>
+      <div class="row">
+        <div class="4u 12u(narrower)">
+          <button class="add-in-button color-legend" style="background: #ff786e;"></button>
+        </div>
+        <div class="8u 12u(narrower)">
+          <p>Unused: A cell that is not used in any calculations and is not a comment, note, summary text or section
+            header.</p>
+        </div>
       </div>
-      <div class="8u 12u(narrower)">
-        <p>Expression: A single calculation cell.</p>
+      <div class="row">
+        <div class="4u 12u(narrower)">
+          <button class="add-in-button color-legend" style="background: #ffddac;"></button>
+        </div>
+        <div class="8u 12u(narrower)">
+          <p>PENOUT: Used to set the output verbosity of the spreadsheet, learn more
+            <a href="http://pensolve.com/faqs.html#howcanireducethenumberofpagesintheoutput">here.</a>
+          </p>
+          <p>Job number: Used to set the job number in the PDF output.</p>
+        </div>
       </div>
-</div>
-    <div class="row">
-      <div class="4u 12u(narrower)">
-        <button class="add-in-button color-legend" style="background: #e5feff;"></button>
-      </div>
-      <div class="8u 12u(narrower)">
-        <p>Repeated expression: An array of calculation cells.</p>
-      </div>
-</div>
-    <div class="row">
-      <div class="4u 12u(narrower)">
-        <button class="add-in-button color-legend" style="background: rgb(223, 223, 223);"></button>
-      </div>
-      <div class="8u 12u(narrower)">
-        <p>Section header: A title of a new calculation section or subsection</p>
-      </div>
-      </div>
-    <div class="row">
-      <div class="4u 12u(narrower)">
-        <button class="add-in-button color-legend" style="background: #ff786e;"></button>
-      </div>
-      <div class="8u 12u(narrower)">
-        <p>Unused: A cell that is not used in any calculations and is not a comment, note, summary text or section header.</p>
+      <div class="row">
+        <div class="4u 12u(narrower)">
+          <button class="add-in-button color-legend" style="background: #9b9b9b;"></button>
+        </div>
+        <div class="8u 12u(narrower)">
+          <p>PENBREAK: Used to split the spreadsheet vertically to
+            allow calculations to be set up in a horizontally. Learn more
+            <a href="http://pensolve.com/blog/2016/10/14/Penbreak/">here.</a>
+          </p>
+        </div>
       </div>
     </div>
+    <br/>
+    <h3 style="padding-bottom: 10px">Pensolve mark up font colors</h3>
+    <div style="background: white; padding: 10px; border-radius: 5px">
+
+      <div class="row">
+        <div class="4u 12u(narrower)">
+          <button class="add-in-button color-legend" style="color: #1c63d2">Parameter name</button>
+        </div>
+        <div class="8u 12u(narrower)">
+          <p>The name of the parameter</p>
+        </div>
       </div>
+      <div class="row">
+        <div class="4u 12u(narrower)">
+          <button class="add-in-button color-legend" style="color: #5e5e5e">Parameter units</button>
+        </div>
+        <div class="8u 12u(narrower)">
+          <p>The units of the parameter.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="4u 12u(narrower)">
+          <button class="add-in-button color-legend" style="color: #762f00">Parameter reference</button>
+        </div>
+        <div class="8u 12u(narrower)">
+          <p>A reference to additional information about the parameter</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="4u 12u(narrower)">
+          <button class="add-in-button color-legend" style="color: #6da2c4;">Comment</button>
+        </div>
+        <div class="8u 12u(narrower)">
+          <p>Text that describes the parameter</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="4u 12u(narrower)">
+          <button class="add-in-button color-legend" style="color: #1c63d2">Summary text</button>
+        </div>
+        <div class="8u 12u(narrower)">
+          <p>Text that describes the calculations at the start of a sheet or section.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="4u 12u(narrower)">
+          <button class="add-in-button color-legend" style="color: #006373">Note</button>
+        </div>
+        <div class="8u 12u(narrower)">
+          <p>A note about the calculations</p>
+        </div>
+      </div>
+    </div>
+
 
     <div align="center" style="width: 100%; padding-top: 15px">
-    <ul class="buttons">
-      <!--<li><a href="#what" onclick="clickedHow()" class="button scrolly">How can Pensolve help?</a></li>-->
-      <li><a href="#" onclick="installExcelAddin()" class="button special">Excel Add-in</a></li>
-    </ul>
-      </div>
+      <ul class="buttons">
+        <!--<li><a href="#what" onclick="clickedHow()" class="button scrolly">How can Pensolve help?</a></li>-->
+        <li><a href="#" onclick="installExcelAddin()" class="button special">Excel Add-in</a></li>
+      </ul>
+    </div>
   </section>
 
   <!-- Footer -->
@@ -220,7 +299,16 @@
     </ul>
 
     <ul class="copyright">
-      <li>&copy; 2015 All Rights Reserved</li>
+      <li>&copy; Copyright 2015-
+        <script language="JavaScript" type="text/javascript">
+          now = new Date;
+          theYear = now.getYear();
+          if (theYear < 1900)
+            theYear = theYear + 1900;
+          document.write(theYear)
+        </script>
+        All Rights Reserved.
+      </li>
       <li><a href="index.html">Home</a></li>
       <li><a href="videos.html">Videos</a></li>
       <li><a href="http://www.pensolve.com/blog/">Blog</a></li>
