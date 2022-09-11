@@ -115,13 +115,13 @@
       mixpanel.track("Transferred to Pensolve app", {
         source: "Clicked Trial Pensolve button at beginning"
       });
-				window.open('no-longer-avail.html');
+				// window.open('https://app.pensolve.com/signup?ref=lp');
     }
     function clickedTrialPensolveBelowVideo() {
       mixpanel.track("Transferred to Pensolve app", {
         source: "Clicked Trial Pensolve button below video"
       });
-      window.open('no-longer-avail.html');
+      // window.open('https://app.pensolve.com/signup?ref=lp');
     }
     function clickedWhy() {
       mixpanel.track("Clicked why button");
@@ -155,7 +155,7 @@
     }
     function clickedPricing() {
       mixpanel.track("Clicked Pricing link");
-      window.open('no-longer-avail.html');
+      // window.open('https://app.pensolve.com/upgrade?ref=lp');
     }
     function clickedImReady() {
       mixpanel.track("Transferred to Pensolve app", {
@@ -226,19 +226,23 @@
         <div class="center style container special-alt">
 
           <div class="row">
-            <div class="12u 12u(narrower)">
+            <div class="5u 12u(narrower)">
 
-              <h2>No longer available</h2>
+              <h2>More productive spreadsheets</h2>
 
-              <div style="text-align: center; padding-left: 5%">
-                Sorry but Pensolve has closed its doors and is no longer available.
+              <div style="text-align: left; padding-left: 5%">
+                <ul>
+                  <li>Transparent and consistent review process for ISO 9001</li>
+                  <li>Uniform spreadsheets according the Engineering Spreadsheet Protocol</li>
+                  <li>Professional PDF of calculations for building consents</li>
+                </ul>
               </div>
-<!--              <a href="steel-design-spreadsheet.html" onclick="goingToSteelExample()" class="button">Example file</a>-->
-<!--            </div>-->
+              <a href="steel-design-spreadsheet.html" onclick="goingToSteelExample()" class="button">Example file</a>
+            </div>
 
-<!--            <div id="video_holder" class="7u 12u(narrower)" align="center">-->
-<!--              &lt;!&ndash; 1. The <iframe> (and video player) will replace this <div> tag. &ndash;&gt;-->
-<!--    <div id="player"></div>-->
+            <div id="video_holder" class="7u 12u(narrower)" align="center">
+              <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+    <div id="player"></div>
 
             </div>
           </div>
@@ -253,7 +257,124 @@
   <br/>
 
 
+  <!-- Main -->
+  <article>
+    <section id="google-app" class="wrapper center style6 container special-alt" style="">
+      <header id="google">
+        <h2><a name="google-app-loc">New Excel integration</a></h2>
+      </header>
+      <div class="row">
+        <div class="8u 12u(narrower)">
+          <section>
+            <a href="/images/Install-Pensolve-Excel-Add-in.pdf" target="_blank" onclick="installExcelAddOn()">
+              <img style="max-width: 100%; margin-bottom: -6px; margin-top: 7px;" alt="Pensolve - Excel add on"
+                   src="/images/Pensolve-excel-add-in-screenshot.png"></a>
+          </section>
+        </div>
+        <div class="4u 12u(narrower)" align="left">
+          <ul style="padding-left: 15%">
+                  <li>In cell highlighting</li>
+                  <li>One-click conversion to PDF</li>
+                  <li>Install within Excel</li>
+                </ul>
+          <div align="center">
+          <a href="/images/Install-Pensolve-Excel-Add-in.pdf" onclick="installGoogleAddOn()" class="button" target="_blank" style="background: white">Install now</a>
+        </div>
+          </div>
 
+      </div>
+
+    </section>
+
+    <section id="pensolve-education" class="wrapper center style5 container special-alt">
+      <header id="education">
+        <h2><a name="education-loc">Free education version</a></h2>
+      </header>
+      <div class="row">
+        <div class="12u 12u(narrower)" align="center">
+
+          <p style="font-style: italic">Making calculation assignments faster, more accurate and simply better looking.</p>
+
+          <div align="center">
+          <a href="education.html" class="button">Find out more</a>
+        </div>
+          </div>
+
+      </div>
+
+    </section>
+    <!-- One -->
+    <!--<section id="google-app" class="wrapper center style5 container special-alt">-->
+      <!--<header id="google">-->
+        <!--<h2><a name="google-app-loc">New Google Sheets integration</a></h2>-->
+      <!--</header>-->
+      <!--<div class="row">-->
+        <!--<div class="8u 12u(narrower)">-->
+          <!--<section>-->
+            <!--<a href="http://do.y9.co.nz/" target="_blank" onclick="clickedToDOWebsite()">-->
+              <!--<img style="width: 36em; max-width: 100%; margin-bottom: -14px; margin-top: 7px;" alt="Pensolve - Google sheets add on"-->
+                   <!--src="/images/Pensolve-Google-Sheets-Add-on.png"></a>-->
+          <!--</section>-->
+        <!--</div>-->
+        <!--<div class="4u 12u(narrower)" align="left">-->
+          <!--<ul style="padding-left: 15%">-->
+                  <!--<li>Better visualisation within the spreadsheet</li>-->
+                  <!--<li>One-click conversion to PDF</li>-->
+                  <!--<li>One-click install</li>-->
+                <!--</ul>-->
+          <!--<div align="center">-->
+          <!--<a href="https://chrome.google.com/webstore/detail/pensolve/acopnipibfgpgbchinapckibeoemeiml?hl=en" onclick="installGoogleAddOn()" class="button special" target="_blank">Install now</a>-->
+        <!--</div>-->
+          <!--</div>-->
+
+      <!--</div>-->
+
+    <!--</section>-->
+
+  <!-- Main -->
+
+    <!-- One -->
+    <section class="wrapper center style3 container special-alt">
+      <header id="customers">
+        <h2><a name="testimonials-loc">User testimonials</a></h2>
+      </header>
+      <div class="row">
+        <div class="4u 12u(narrower)">
+          <section>
+            <a href="http://do.y9.co.nz/" target="_blank" onclick="clickedToDOWebsite()">
+              <img style="width: 16em; max-width: 100%; margin-bottom: -14px; margin-top: 7px;"
+                   src="/images/DO_logo_round.png"></a>
+          </section>
+        </div>
+        <div class="8u 12u(narrower)">
+          <p align="left">“We have implemented Pensolve to convert difficult to follow design spreadsheets
+            into simple and standardised formats, similar to traditional engineering hand calculations.
+            It is utilised within structural design packages issued to clients, as part of the documentation
+            required for council consent.”</p>
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="4u 12u(narrower)">
+          <section>
+            <a href="http://www.bvt.co.nz/" target="_blank" onclick="clickedToBVTWebsite()">
+              <img style="width: 16em; max-width: 100%; margin-bottom: -14px; margin-top: 7px;"
+                   src="/images/BVT_logo.png"></a>
+          </section>
+        </div>
+        <div class="8u 12u(narrower)">
+          <p align="left">"As Managing Director of BVT Engineering, I have researched several products for creating
+            calculation sheets, including Mathcad and TEDDS.
+            However, they all seem to be a complicated way to make a spreadsheet
+            look pretty. We've found that Pensolve works great to take everything that we like about working with
+            spreadsheets, and add the best parts of what was appealing about TEDDS or Mathcad. It also lets our
+            engineers focus on what they are good at, solving problems, rather than rearranging sheets to get them
+            to "look right" for print. I can see realisation of considerable time savings from using Pensolve.
+            Finally, we have found product support to be exceptional, and on-boarding to be comparatively painless."</p>
+        </div>
+
+      </div>
+    </section>
 
     <section class="wrapper center style4 container special-alt" id="more">
       <div>
